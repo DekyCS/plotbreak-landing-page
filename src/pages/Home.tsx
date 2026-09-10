@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom';
 import { Nav, Footer, StoreButton } from '../components/Layout';
 import CoverStack from '../components/CoverStack';
 import { ArrowRight, Icon } from '../components/Icons';
-import { WORLDS, GENRES, matchesGenre } from '../data/worlds';
-import { TIERS, FEATURES, FAQ } from '../data/content';
-import { APP_NAME } from '../config';
+import { WORLDS, matchesGenre } from '../data/worlds';
+import { useLocale } from '../i18n';
 
 export default function Home() {
-  const [genre, setGenre] = useState('Main');
+  const { t, path } = useLocale();
+  const all = t.genres[0];
+  const [genre, setGenre] = useState(all);
   const [expanded, setExpanded] = useState(false);
-  const shown = WORLDS.filter((w) => matchesGenre(w, genre));
+  const shown = WORLDS.filter((w) => matchesGenre(t.worlds[w.id].tags, genre, all));
+  const [s1, s2, s3] = t.how.steps;
 
   return (
     <>
@@ -23,21 +25,19 @@ export default function Home() {
           </div>
           <div className="wrap">
             <div className="hero-copy">
-              <span className="star-line">The playable anime</span>
-              <h1>Say anything.<br />The <span className="brand">dice</span> decide.</h1>
-              <p className="lede">
-                {APP_NAME} is a roleplay RPG where a real game engine rolls for every outcome. Charm, fight, lie, steal, run, then live with what actually happened. The AI only tells the story. It never gets to change it.
-              </p>
+              <span className="star-line">{t.hero.eyebrow}</span>
+              <h1>{t.hero.h1a}<br />{t.hero.h1b} <span className="brand">{t.hero.h1brand}</span> {t.hero.h1c}</h1>
+              <p className="lede">{t.hero.lede}</p>
               <div className="hero-cta">
                 <StoreButton className="btn btn-brand btn-lg">
-                  <span className="stack"><small>Download on the</small>App Store</span>
+                  <span className="stack"><small>{t.hero.downloadOn}</small>{t.hero.appStore}</span>
                 </StoreButton>
-                <a className="btn btn-dark btn-lg" href="#worlds">Explore Worlds</a>
+                <a className="btn btn-dark btn-lg" href="#worlds">{t.hero.explore}</a>
               </div>
               <div className="hero-meta">
-                <span className="tag tag-outline">10 worlds at launch</span>
-                <span className="tag tag-outline">900 free credits</span>
-                <span className="tag tag-brand">No pay-to-win dice</span>
+                <span className="tag tag-outline">{t.hero.meta1}</span>
+                <span className="tag tag-outline">{t.hero.meta2}</span>
+                <span className="tag tag-brand">{t.hero.meta3}</span>
               </div>
             </div>
             <CoverStack />
@@ -47,47 +47,50 @@ export default function Home() {
         {/* Stats */}
         <section className="wrap" aria-label="At a glance">
           <div className="stats reveal">
-            <div><b><em>10</em> worlds</b><span>hand-built, each with its own rules</span></div>
-            <div><b><em>d20</em> rolls</b><span>seeded, every single turn</span></div>
-            <div><b><em>5</em> dimensions</b><span>per relationship, all of them can fail</span></div>
-            <div><b><em>1</em> lethal world</b><span>where you can actually die</span></div>
+            {t.stats.map((s) => (
+              <div key={s.rest}><b><em>{s.big}</em> {s.rest}</b><span>{s.sub}</span></div>
+            ))}
           </div>
         </section>
 
         {/* Worlds */}
         <section className="section" id="worlds">
           <div className="wrap">
-            <div className="chips" role="group" aria-label="Filter worlds by genre">
-              {GENRES.map((g) => (
+            <div className="chips" role="group" aria-label={t.worldsSection.filterLabel}>
+              {t.genres.map((g) => (
                 <button key={g} type="button" className="chip" aria-pressed={genre === g} onClick={() => setGenre(g)}>{g}</button>
               ))}
             </div>
             <div className="section-head reveal">
               <div>
-                <h2>Launch worlds</h2>
-                <p>Every world is written by hand with its own cast, quest lines and one strong system. None of them are a chat window with a costume on.</p>
+                <h2>{t.worldsSection.title}</h2>
+                <p>{t.worldsSection.lede}</p>
               </div>
               <button type="button" className="more" onClick={() => setExpanded((v) => !v)}>
-                {expanded ? 'Show Covers' : 'Show Details'} <ArrowRight />
+                {expanded ? t.worldsSection.showCovers : t.worldsSection.showDetails} <ArrowRight />
               </button>
             </div>
             {shown.length === 0 ? (
-              <div className="empty">Nothing tagged “{genre}” yet.</div>
+              <div className="empty">{t.worldsSection.empty(genre)}</div>
             ) : (
               <div className={`worlds${expanded ? ' expanded' : ''}`} key={genre + (expanded ? '-x' : '')}>
-                {shown.map((w, i) => (
-                  <a className="world" href="#download" key={w.id} style={{ animationDelay: `${i * 45}ms` }}>
-                    <div className="cover">
-                      <img src={w.cover} alt={`${w.title} cover art`} loading={i < 6 ? 'eager' : 'lazy'} decoding="async" />
-                      {w.defeat === 'Lethal' && <span className="tag tag-danger lethal">Lethal</span>}
-                    </div>
-                    <div>
-                      <h3>{w.title}</h3>
-                      <div className="meta">{w.tags.slice(0, 2).join(' · ')} · {w.defeat}</div>
-                      <p className="hook">{w.hook}</p>
-                    </div>
-                  </a>
-                ))}
+                {shown.map((w, i) => {
+                  const c = t.worlds[w.id];
+                  const defeat = w.defeat === 'Lethal' ? t.worldsSection.lethal : t.worldsSection.failForward;
+                  return (
+                    <a className="world" href="#download" key={w.id} style={{ animationDelay: `${i * 45}ms` }}>
+                      <div className="cover">
+                        <img src={w.cover} alt={t.worldsSection.coverAlt(w.title)} loading={i < 6 ? 'eager' : 'lazy'} decoding="async" />
+                        {w.defeat === 'Lethal' && <span className="tag tag-danger lethal">{t.worldsSection.lethal}</span>}
+                      </div>
+                      <div>
+                        <h3>{w.title}</h3>
+                        <div className="meta">{c.tags.slice(0, 2).join(' · ')} · {defeat}</div>
+                        <p className="hook">{c.hook}</p>
+                      </div>
+                    </a>
+                  );
+                })}
               </div>
             )}
           </div>
@@ -100,36 +103,36 @@ export default function Home() {
           <div className="wrap">
             <div className="section-head reveal">
               <div>
-                <span className="star-line">How a turn works</span>
-                <h2 style={{ marginTop: 10 }}>The model interprets. The engine decides. The writer makes it hurt.</h2>
-                <p>Most “AI RPGs” let the language model narrate itself into omnipotence. Type “she falls in love with me” and she does. {APP_NAME} never lets the model decide outcomes.</p>
+                <span className="star-line">{t.how.eyebrow}</span>
+                <h2 style={{ marginTop: 10 }}>{t.how.title}</h2>
+                <p>{t.how.lede}</p>
               </div>
             </div>
             <div className="pipeline reveal">
               <div className="card step">
-                <span className="n">01 · You type</span>
-                <h3>Anything at all</h3>
-                <p>No menus, no pre-written choices. The parser turns your sentence into a structured intent: who, what, how risky.</p>
+                <span className="n">{s1.n}</span>
+                <h3>{s1.h}</h3>
+                <p>{s1.p}</p>
                 <div className="sample">
-                  <span className="k">you →</span> “Slip the ledger into my bag while Marta is arguing with the stage manager.”<br />
-                  <span className="k">intent</span> <span className="a">steal</span> <span className="k">· target</span> ledger <span className="k">· risk</span> <span className="w">RISKY</span>
+                  <span className="k">{t.how.sample1.you}</span> {t.how.sample1.line}<br />
+                  <span className="k">{t.how.sample1.intent}</span> <span className="a">{t.how.sample1.intentV}</span> <span className="k">{t.how.sample1.target}</span> {t.how.sample1.targetV} <span className="k">{t.how.sample1.risk}</span> <span className="w">{t.how.sample1.riskV}</span>
                 </div>
               </div>
               <div className="card step">
-                <span className="n">02 · The engine rolls</span>
-                <h3>A pure, seeded rules engine</h3>
-                <p>Checks, inventory, quests, relationships, combat and death are engine truth. Same seed, same outcome, every time. Paying more never buys better dice.</p>
+                <span className="n">{s2.n}</span>
+                <h3>{s2.h}</h3>
+                <p>{s2.p}</p>
                 <div className="sample">
-                  <span className="k">check</span> Sleight · DC 14<br />
-                  <span className="k">roll</span> 11 + 4 = 15 <span className="a">SUCCESS</span><br />
-                  <span className="k">mutate</span> +ledger <span className="k">·</span> Marta suspicion +1
+                  <span className="k">{t.how.sample2.check}</span> {t.how.sample2.checkV}<br />
+                  <span className="k">{t.how.sample2.roll}</span> {t.how.sample2.rollV} <span className="a">{t.how.sample2.result}</span><br />
+                  <span className="k">{t.how.sample2.mutate}</span> {t.how.sample2.mutateV} <span className="k">·</span> {t.how.sample2.mutate2}
                 </div>
               </div>
               <div className="card step">
-                <span className="n">03 · The writer describes</span>
-                <h3>Prose over truth, not instead of it</h3>
-                <p>Only after the engine has committed does a writer describe what already happened. It can be beautiful. It cannot be wrong.</p>
-                <div className="sample prose">The ledger is heavier than it looks. Marta is still talking about the lights when you close the bag, and she does not look over. But her sentence loses its shape for half a second, and you both hear it.</div>
+                <span className="n">{s3.n}</span>
+                <h3>{s3.h}</h3>
+                <p>{s3.p}</p>
+                <div className="sample prose">{t.how.sample3}</div>
               </div>
             </div>
           </div>
@@ -142,12 +145,12 @@ export default function Home() {
           <div className="wrap">
             <div className="section-head reveal">
               <div>
-                <span className="star-line">Why it’s different</span>
-                <h2 style={{ marginTop: 10 }}>A game that happens to be generative. Not a chatbot in a costume.</h2>
+                <span className="star-line">{t.why.eyebrow}</span>
+                <h2 style={{ marginTop: 10 }}>{t.why.title}</h2>
               </div>
             </div>
             <div className="rows reveal">
-              {FEATURES.map((f) => (
+              {t.why.features.map((f) => (
                 <div className="card row" key={f.title}>
                   <div className="ico"><Icon name={f.icon} /></div>
                   <div>
@@ -168,22 +171,22 @@ export default function Home() {
           <div className="wrap">
             <div className="section-head reveal">
               <div>
-                <span className="star-line">Credits</span>
-                <h2 style={{ marginTop: 10 }}>Pay for prose. Never for luck.</h2>
-                <p>Every turn costs credits. A higher tier buys deeper writing, more memory and scene art. The engine underneath is identical at every tier, so nobody can buy a better roll.</p>
+                <span className="star-line">{t.credits.eyebrow}</span>
+                <h2 style={{ marginTop: 10 }}>{t.credits.title}</h2>
+                <p>{t.credits.lede}</p>
               </div>
             </div>
             <div className="tiers reveal">
-              {TIERS.map((t) => (
-                <div className={`card tier${t.id === 'VIVID' ? ' default' : ''}`} key={t.id}>
-                  <div className="name">{t.label}{t.id === 'VIVID' && <span className="tag tag-brand">Default</span>}</div>
-                  <div className="cost"><span className="box">✱</span>{t.cost}<small>credits / turn</small></div>
-                  <p>{t.promise}.</p>
-                  <span className="promise">{t.detail}</span>
+              {t.credits.tiers.map((tier) => (
+                <div className={`card tier${tier.id === 'VIVID' ? ' default' : ''}`} key={tier.id}>
+                  <div className="name">{tier.label}{tier.id === 'VIVID' && <span className="tag tag-brand">{t.credits.default}</span>}</div>
+                  <div className="cost"><span className="box">✱</span>{tier.cost}<small>{t.credits.perTurn}</small></div>
+                  <p>{tier.promise}.</p>
+                  <span className="promise">{tier.detail}</span>
                 </div>
               ))}
             </div>
-            <p className="tiers-note">New accounts start with 900 credits, then receive a daily allowance. Credit packs are one-time purchases through the App Store. No subscription, no auto-reload.</p>
+            <p className="tiers-note">{t.credits.note}</p>
           </div>
         </section>
 
@@ -194,17 +197,17 @@ export default function Home() {
           <div className="wrap">
             <div className="section-head reveal">
               <div>
-                <span className="star-line">FAQ</span>
-                <h2 style={{ marginTop: 10 }}>Questions people ask before they download.</h2>
+                <span className="star-line">{t.faq.eyebrow}</span>
+                <h2 style={{ marginTop: 10 }}>{t.faq.title}</h2>
               </div>
             </div>
             <div className="faq reveal">
-              {FAQ.map((item) => (
+              {t.faq.items.map((item) => (
                 <details key={item.q}>
                   <summary>{item.q}</summary>
                   <div className="a">
                     {item.a}{' '}
-                    {'link' in item && item.link ? <>Full details are in the <Link to={item.link.href}>{item.link.label}</Link>.</> : null}
+                    {'link' in item && item.link ? <>{t.faq.linkPrefix} <Link to={path('/privacy')}>{t.faq.linkLabel}</Link>.</> : null}
                   </div>
                 </details>
               ))}
@@ -215,12 +218,12 @@ export default function Home() {
         {/* CTA */}
         <section className="cta" id="download">
           <div className="wrap">
-            <img src="/assets/icon-512.png" alt={`${APP_NAME} app icon`} width={72} height={72} />
-            <h2>Your move.</h2>
-            <p>Free to start. Ten worlds. One rule: the dice are honest.</p>
+            <img src="/assets/icon-512.png" alt={t.cta.iconAlt} width={72} height={72} />
+            <h2>{t.cta.title}</h2>
+            <p>{t.cta.lede}</p>
             <div className="hero-cta">
               <StoreButton className="btn btn-brand btn-lg">
-                <span className="stack"><small>Download on the</small>App Store</span>
+                <span className="stack"><small>{t.hero.downloadOn}</small>{t.hero.appStore}</span>
               </StoreButton>
             </div>
           </div>

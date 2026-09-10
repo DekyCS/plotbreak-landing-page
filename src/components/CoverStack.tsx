@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { WORLDS, HERO_STACK } from '../data/worlds';
 import { ArrowLeft, ArrowRight } from './Icons';
+import { useLocale } from '../i18n';
 
 const DEAL_MS = 3800;
 
@@ -11,6 +12,7 @@ const DEAL_MS = 3800;
  * a few degrees, and none of it runs under prefers-reduced-motion.
  */
 export default function CoverStack() {
+  const { t } = useLocale();
   const stack = HERO_STACK.map((id) => WORLDS.find((w) => w.id === id)!).filter(Boolean);
   const [order, setOrder] = useState(() => stack.map((w) => w.id));
   const [paused, setPaused] = useState(false);
@@ -28,11 +30,11 @@ export default function CoverStack() {
 
   useEffect(() => {
     if (paused || manual) return;
-    const t = window.setInterval(() => {
+    const timer = window.setInterval(() => {
       if (reduced.current || document.hidden) return;
       setOrder((o) => [...o.slice(1), o[0]]);
     }, DEAL_MS);
-    return () => window.clearInterval(t);
+    return () => window.clearInterval(timer);
   }, [paused, manual]);
 
   const deal = (dir: 1 | -1) => {
@@ -49,6 +51,7 @@ export default function CoverStack() {
   };
 
   const front = stack.find((w) => w.id === order[0])!;
+  const copy = (id: string) => t.worlds[id];
 
   return (
     <div
@@ -59,7 +62,7 @@ export default function CoverStack() {
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
     >
-      <div className="fan" style={{ transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)` }} role="group" aria-label="Featured worlds">
+      <div className="fan" style={{ transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)` }} role="group" aria-label={t.fan.group}>
         {stack.map((w) => {
           const i = order.indexOf(w.id); // 0 = front
           return (
@@ -69,14 +72,14 @@ export default function CoverStack() {
               className="fan-card"
               data-pos={i}
               style={{ zIndex: stack.length - i, animationDelay: `${i * 90}ms` }}
-              aria-label={`${w.title}: ${w.hook}`}
+              aria-label={`${w.title}: ${copy(w.id).hook}`}
               tabIndex={i === 0 ? 0 : -1}
             >
               <img src={w.cover} srcSet={`${w.cover} 600w, ${w.coverLarge} 900w`} sizes="280px" alt="" loading={i === 0 ? 'eager' : 'lazy'} draggable={false} />
-              <span className="fan-tag"><span className="star">✱</span>Original</span>
+              <span className="fan-tag"><span className="star">✱</span>{t.fan.original}</span>
               <span className="fan-title">
                 <b>{w.title}</b>
-                <small>{w.tags.slice(0, 2).join(' · ')}</small>
+                <small>{copy(w.id).tags.slice(0, 2).join(' · ')}</small>
               </span>
             </a>
           );
@@ -84,11 +87,11 @@ export default function CoverStack() {
       </div>
       <div className="fan-caption">
         <div className="fan-controls">
-          <button type="button" className="fan-btn" onClick={() => deal(-1)} aria-label="Previous world"><ArrowLeft /></button>
+          <button type="button" className="fan-btn" onClick={() => deal(-1)} aria-label={t.fan.prev}><ArrowLeft /></button>
           <span className="star-line">{front.title}</span>
-          <button type="button" className="fan-btn" onClick={() => deal(1)} aria-label="Next world"><ArrowRight /></button>
+          <button type="button" className="fan-btn" onClick={() => deal(1)} aria-label={t.fan.next}><ArrowRight /></button>
         </div>
-        <p key={front.id}>{front.hook}</p>
+        <p key={front.id}>{copy(front.id).hook}</p>
       </div>
     </div>
   );

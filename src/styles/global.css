@@ -160,3 +160,9 @@ hr.rule { border: 0; height: 1px; background: var(--border); margin: 0; }
   .footer .wrap { gap: 22px; grid-template-columns: 1fr 1fr; }
   .footer .wrap > div:first-child { grid-column: 1 / -1; }
 }
+
+/* Language switch */
+.lang { display: inline-flex; align-items: center; justify-content: center; height: 38px; min-width: 42px; padding: 0 10px; border-radius: var(--r-md); border: 1px solid var(--border); background: var(--card); font-size: 13px; font-weight: 600; letter-spacing: .04em; color: var(--muted-foreground); transition: color .18s ease, border-color .18s ease; }
+.lang:hover { color: var(--foreground); border-color: var(--border-strong); }
+.lang-inline { color: var(--muted-foreground); }
+.lang-inline:hover { color: var(--brand); }

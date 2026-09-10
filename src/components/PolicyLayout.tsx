@@ -2,9 +2,12 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { POLICY_DATE } from '../config';
 import { ArrowLeft, Chevron } from './Icons';
+import { useLocale } from '../i18n';
+import { LanguageSwitch } from './Layout';
 
 /** The ooc-style policy frame: title, version dropdown, 768px markdown column. */
 export default function PolicyLayout({ title, children }: { title: string; children: React.ReactNode }) {
+  const { t, path } = useLocale();
   const details = useRef<HTMLDetailsElement>(null);
 
   useEffect(() => {
@@ -24,7 +27,8 @@ export default function PolicyLayout({ title, children }: { title: string; child
           <summary><span>{POLICY_DATE}</span><Chevron /></summary>
           <div><button type="button" onClick={() => details.current?.removeAttribute('open')}>{POLICY_DATE}</button></div>
         </details>
-        <Link to="/" className="policy-back"><ArrowLeft />Back to Plotbreak</Link>
+        <LanguageSwitch className="policy-back" />
+        <Link to={path('/')} className="policy-back"><ArrowLeft />{t.policy.back}</Link>
       </div>
       <section className="doc">{children}</section>
     </main>
