@@ -1,0 +1,44 @@
+/* Policy pages — mirrors ooc.ai/policy/*: 768px column, 14px/400 body, 1px borders. */
+.policy { margin: 0 auto; width: 100%; max-width: 768px; padding: 40px 24px; }
+@media (min-width: 768px) { .policy { padding: 64px 24px; } }
+.policy h1 { margin: 0 0 32px; font-size: 16px; line-height: 24px; font-weight: 400; }
+
+.policy-toolbar { margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; }
+@media (min-width: 640px) { .policy-toolbar { flex-direction: row; align-items: center; } }
+.version { position: relative; width: 100%; max-width: 384px; }
+@media (min-width: 640px) { .version { width: fit-content; min-width: 160px; } }
+.version > summary {
+  list-style: none; cursor: pointer;
+  display: flex; height: 36px; align-items: center; justify-content: space-between; gap: 8px;
+  border: 1px solid var(--border); background: var(--background); padding: 0 12px;
+  color: var(--foreground); font-size: 14px; line-height: 1; font-weight: 400;
+}
+.version > summary::-webkit-details-marker { display: none; }
+.version > summary:hover { background: var(--muted); }
+.version > summary svg { width: 16px; height: 16px; flex: none; }
+.version > div { position: absolute; z-index: 10; top: calc(100% + 4px); left: 0; min-width: 100%; background: var(--background); border: 1px solid var(--border); padding: 4px; }
+.version > div button { display: block; width: 100%; text-align: left; font-size: 14px; line-height: 1; padding: 8px; color: var(--foreground); }
+.version > div button:hover { background: var(--muted); }
+.policy-back { display: inline-flex; align-items: center; gap: 6px; color: var(--muted-foreground); font-size: 14px; height: 36px; padding: 0 12px; border: 1px solid var(--border); }
+.policy-back:hover { background: var(--muted); color: var(--foreground); }
+.policy-back svg { width: 16px; height: 16px; }
+
+.doc { width: 100%; font-size: 16px; line-height: 1.75em; word-break: normal; overflow-wrap: anywhere; }
+.doc p { margin: 1.25em 0; white-space: pre-wrap; font-size: 14px; font-weight: 400; line-height: 150%; }
+.doc strong { font-weight: 600; line-height: 150%; font-size: 14px; }
+.doc em { font-style: italic; font-weight: 500; }
+.doc a { color: var(--blue); text-decoration: underline; text-underline-offset: 4px; overflow-wrap: break-word; }
+.doc a:hover { color: #62aeff; }
+.doc ol, .doc ul { margin: 1.25em 0; padding-left: 1.625em; font-size: 14px; }
+.doc ol { list-style-type: decimal; }
+.doc ul { list-style-type: disc; }
+.doc ol > li, .doc ul > li { margin: 8px 0; padding-left: .375em; line-height: 1.75em; }
+.doc li::marker { color: var(--muted-foreground); }
+.doc ol.heading > li > strong { font-size: 14px; }
+
+.table-wrap { margin: 1.5rem 0; width: 100%; overflow-x: auto; overscroll-behavior-x: contain; touch-action: pan-x; border: 1px solid var(--border); }
+.doc table { border-collapse: collapse; width: max-content; min-width: 100%; text-align: left; font-size: 12.25px; line-height: 21px; }
+.doc th, .doc td { min-width: 160px; max-width: 384px; padding: 6px 12px; vertical-align: top; border-right: 1px solid var(--border); font-size: 12px; line-height: 18px; }
+.doc th { background: var(--muted); font-weight: 500; }
+.doc td { border-top: 1px solid var(--border); font-weight: 300; }
+.doc th:last-child, .doc td:last-child { border-right: 0; }
