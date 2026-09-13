@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { Nav, Footer, StoreButton } from '../components/Layout';
 import CoverStack from '../components/CoverStack';
 import { ArrowRight, Icon } from '../components/Icons';
-import { WORLDS, matchesGenre } from '../data/worlds';
+import { WORLDS, coverSrc, matchesGenre } from '../data/worlds';
 import { useLocale } from '../i18n';
 
 export default function Home() {
-  const { t, path } = useLocale();
+  const { t, path, locale } = useLocale();
   const all = t.genres[0];
   const [genre, setGenre] = useState(all);
   const [expanded, setExpanded] = useState(false);
@@ -80,7 +80,7 @@ export default function Home() {
                   return (
                     <a className="world" href="#download" key={w.id} style={{ animationDelay: `${i * 45}ms` }}>
                       <div className="cover">
-                        <img src={w.cover} alt={t.worldsSection.coverAlt(w.title)} loading={i < 6 ? 'eager' : 'lazy'} decoding="async" />
+                        <img src={coverSrc(w.id, locale).cover} alt={t.worldsSection.coverAlt(w.title)} loading={i < 6 ? 'eager' : 'lazy'} decoding="async" />
                         {w.defeat === 'Lethal' && <span className="tag tag-danger lethal">{t.worldsSection.lethal}</span>}
                       </div>
                       <div>

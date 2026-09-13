@@ -54,10 +54,7 @@
 .fan-card[data-pos="0"]:hover { --dy: -6px; }
 .fan-tag { position: absolute; top: 10px; right: 10px; display: inline-flex; align-items: center; gap: 4px; height: 20px; padding: 0 6px; border-radius: 4px; border: 1px solid var(--border); background: rgba(0,0,0,.65); font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
 .fan-tag .star { color: var(--brand); font-size: 13px; line-height: 1; }
-.fan-title { position: absolute; inset: auto 0 0 0; padding: 48px 12px 12px; display: flex; flex-direction: column; gap: 2px; background: linear-gradient(180deg, transparent, rgba(0,0,0,.85)); opacity: 0; transition: opacity .3s ease; }
 .fan-card[data-pos="0"] .fan-title { opacity: 1; }
-.fan-title b { font-size: 15px; font-weight: 600; line-height: 20px; }
-.fan-title small { font-size: 11px; color: var(--muted-foreground); }
 .fan-caption { text-align: center; max-width: 400px; min-height: 96px; }
 .fan-controls { display: flex; align-items: center; justify-content: center; gap: 10px; }
 .fan-btn { width: 36px; height: 36px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); color: var(--muted-foreground); display: grid; place-items: center; transition: border-color .18s ease, color .18s ease, transform .18s cubic-bezier(.2,.7,.2,1); }

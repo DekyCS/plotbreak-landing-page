@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { WORLDS, HERO_STACK } from '../data/worlds';
+import { WORLDS, HERO_STACK, coverSrc } from '../data/worlds';
 import { ArrowLeft, ArrowRight } from './Icons';
 import { useLocale } from '../i18n';
 
@@ -12,7 +12,7 @@ const DEAL_MS = 3800;
  * a few degrees, and none of it runs under prefers-reduced-motion.
  */
 export default function CoverStack() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const stack = HERO_STACK.map((id) => WORLDS.find((w) => w.id === id)!).filter(Boolean);
   const [order, setOrder] = useState(() => stack.map((w) => w.id));
   const [paused, setPaused] = useState(false);
@@ -65,6 +65,7 @@ export default function CoverStack() {
       <div className="fan" style={{ transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)` }} role="group" aria-label={t.fan.group}>
         {stack.map((w) => {
           const i = order.indexOf(w.id); // 0 = front
+          const { cover, coverLarge } = coverSrc(w.id, locale);
           return (
             <a
               key={w.id}
@@ -75,12 +76,8 @@ export default function CoverStack() {
               aria-label={`${w.title}: ${copy(w.id).hook}`}
               tabIndex={i === 0 ? 0 : -1}
             >
-              <img src={w.cover} srcSet={`${w.cover} 600w, ${w.coverLarge} 900w`} sizes="280px" alt="" loading={i === 0 ? 'eager' : 'lazy'} draggable={false} />
+              <img src={cover} srcSet={`${cover} 600w, ${coverLarge} 900w`} sizes="280px" alt="" loading={i === 0 ? 'eager' : 'lazy'} draggable={false} />
               <span className="fan-tag"><span className="star">✱</span>{t.fan.original}</span>
-              <span className="fan-title">
-                <b>{w.title}</b>
-                <small>{copy(w.id).tags.slice(0, 2).join(' · ')}</small>
-              </span>
             </a>
           );
         })}

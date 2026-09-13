@@ -1,28 +1,36 @@
+import type { Locale } from '../i18n';
+
 export interface WorldBase {
   id: string;
   title: string;
-  cover: string;
-  coverLarge: string;
   defeat: 'Fail forward' | 'Lethal';
 }
 
-const cover = (id: string) => ({ cover: `/assets/covers/${id}-600.webp`, coverLarge: `/assets/covers/${id}.webp` });
+/**
+ * Cover art has the title drawn in, so each locale gets its own render:
+ * `<id>.webp` (900w) and `<id>-600.webp` for English, `<id>.fr.webp` and
+ * `<id>.fr-600.webp` for French. Same files the app ships.
+ */
+export function coverSrc(id: string, locale: Locale): { cover: string; coverLarge: string } {
+  const base = `/assets/covers/${id}${locale === 'fr' ? '.fr' : ''}`;
+  return { cover: `${base}-600.webp`, coverLarge: `${base}.webp` };
+}
 
 /**
  * The launch catalog, in catalog order. Titles are names and stay in English in
  * every locale; hooks and tags live in the i18n dictionaries under `worlds[id]`.
  */
 export const WORLDS: WorldBase[] = [
-  { id: 'ninth_archive', title: 'The Ninth Archive', defeat: 'Fail forward', ...cover('ninth_archive') },
-  { id: 'red_moon', title: 'Red Moon Brigade', defeat: 'Fail forward', ...cover('red_moon') },
-  { id: 'seven_days', title: 'Seven Days to Midnight', defeat: 'Fail forward', ...cover('seven_days') },
-  { id: 'tidewall', title: 'The Tidewall', defeat: 'Fail forward', ...cover('tidewall') },
-  { id: 'salt_road', title: 'The Salt Road', defeat: 'Lethal', ...cover('salt_road') },
-  { id: 'blackwake', title: 'Blackwake', defeat: 'Fail forward', ...cover('blackwake') },
-  { id: 'unbound', title: 'The Unbound', defeat: 'Fail forward', ...cover('unbound') },
-  { id: 'nine_weeks', title: 'Nine Weeks', defeat: 'Fail forward', ...cover('nine_weeks') },
-  { id: 'understudy', title: 'The Understudy', defeat: 'Fail forward', ...cover('understudy') },
-  { id: 'last_five', title: 'Last Five', defeat: 'Fail forward', ...cover('last_five') },
+  { id: 'ninth_archive', title: 'The Ninth Archive', defeat: 'Fail forward' },
+  { id: 'red_moon', title: 'Red Moon Brigade', defeat: 'Fail forward' },
+  { id: 'seven_days', title: 'Seven Days to Midnight', defeat: 'Fail forward' },
+  { id: 'tidewall', title: 'The Tidewall', defeat: 'Fail forward' },
+  { id: 'salt_road', title: 'The Salt Road', defeat: 'Lethal' },
+  { id: 'blackwake', title: 'Blackwake', defeat: 'Fail forward' },
+  { id: 'unbound', title: 'The Unbound', defeat: 'Fail forward' },
+  { id: 'nine_weeks', title: 'Nine Weeks', defeat: 'Fail forward' },
+  { id: 'understudy', title: 'The Understudy', defeat: 'Fail forward' },
+  { id: 'last_five', title: 'Last Five', defeat: 'Fail forward' },
 ];
 
 /** The five covers fanned in the hero, front to back. */
