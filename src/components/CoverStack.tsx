@@ -73,7 +73,7 @@ export default function CoverStack() {
               className="fan-card"
               data-pos={i}
               style={{ zIndex: stack.length - i, animationDelay: `${i * 90}ms` }}
-              aria-label={`${w.title}: ${copy(w.id).hook}`}
+              aria-label={`${copy(w.id).title}: ${copy(w.id).hook}`}
               tabIndex={i === 0 ? 0 : -1}
             >
               <img src={cover} srcSet={`${cover} 600w, ${coverLarge} 900w`} sizes="280px" alt="" loading={i === 0 ? 'eager' : 'lazy'} draggable={false} />
@@ -85,7 +85,7 @@ export default function CoverStack() {
       <div className="fan-caption">
         <div className="fan-controls">
           <button type="button" className="fan-btn" onClick={() => deal(-1)} aria-label={t.fan.prev}><ArrowLeft /></button>
-          <span className="star-line">{front.title}</span>
+          <span className="star-line">{copy(front.id).title}</span>
           <button type="button" className="fan-btn" onClick={() => deal(1)} aria-label={t.fan.next}><ArrowRight /></button>
         </div>
         <p key={front.id}>{copy(front.id).hook}</p>

@@ -17,8 +17,9 @@ export function coverSrc(id: string, locale: Locale): { cover: string; coverLarg
 }
 
 /**
- * The launch catalog, in catalog order. Titles are names and stay in English in
- * every locale; hooks and tags live in the i18n dictionaries under `worlds[id]`.
+ * The launch catalog, in catalog order. `title` is the English name used as a
+ * key and fallback; the displayed title, hook and tags live in the i18n
+ * dictionaries under `worlds[id]`, matching the title drawn into each cover.
  */
 export const WORLDS: WorldBase[] = [
   { id: 'ninth_archive', title: 'The Ninth Archive', defeat: 'Fail forward' },

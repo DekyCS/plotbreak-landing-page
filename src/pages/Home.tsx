@@ -80,11 +80,11 @@ export default function Home() {
                   return (
                     <a className="world" href="#download" key={w.id} style={{ animationDelay: `${i * 45}ms` }}>
                       <div className="cover">
-                        <img src={coverSrc(w.id, locale).cover} alt={t.worldsSection.coverAlt(w.title)} loading={i < 6 ? 'eager' : 'lazy'} decoding="async" />
+                        <img src={coverSrc(w.id, locale).cover} alt={t.worldsSection.coverAlt(c.title)} loading={i < 6 ? 'eager' : 'lazy'} decoding="async" />
                         {w.defeat === 'Lethal' && <span className="tag tag-danger lethal">{t.worldsSection.lethal}</span>}
                       </div>
                       <div>
-                        <h3>{w.title}</h3>
+                        <h3>{c.title}</h3>
                         <div className="meta">{c.tags.slice(0, 2).join(' · ')} · {defeat}</div>
                         <p className="hook">{c.hook}</p>
                       </div>
