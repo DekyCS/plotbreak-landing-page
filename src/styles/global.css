@@ -1,5 +1,5 @@
 /* Plotbreak — design tokens mirror the app: near-black ground, grey cards,
-   1px white/10% borders, one lime accent (hsl 69 100% 59%), Inter. */
+   1px white/10% borders, one violet accent (#7c6cff), Inter. */
 :root {
   --background: #121212;
   --card: #171717;
@@ -10,8 +10,8 @@
   --muted-2: #8b8b8f; /* 5.5:1 on #121212; #7a7a7d was 4.4:1 */
   --border: rgba(255, 255, 255, 0.1);
   --border-strong: rgba(255, 255, 255, 0.18);
-  --brand: #e0ff2e;
-  --brand-foreground: #121212;
+  --brand: #7c6cff;
+  --brand-foreground: #0b0d12;
   --blue: #1a88ff;
   --danger: #ff5b69;
   --warning: #ffdc65;
@@ -87,7 +87,7 @@ ul, ol { padding: 0; list-style: none; }
 }
 .tag .star { color: var(--brand); font-size: 13px; line-height: 1; }
 .tag-outline { background: transparent; color: var(--muted-foreground); font-weight: 600; }
-.tag-brand { color: var(--brand); border-color: rgba(224,255,46,.35); background: rgba(224,255,46,.08); }
+.tag-brand { color: var(--brand); border-color: rgba(124,108,255,.4); background: rgba(124,108,255,.1); }
 .tag-danger { color: var(--danger); border-color: rgba(255,91,105,.35); background: rgba(255,91,105,.1); }
 
 /* Cards */
@@ -116,8 +116,9 @@ hr.rule { border: 0; height: 1px; background: var(--border); margin: 0; }
 /* Nav */
 .nav { position: sticky; top: 0; z-index: 40; background: rgba(18,18,18,.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 16px; }
-.wordmark { display: inline-flex; align-items: center; gap: 2px; font-weight: 800; font-size: 20px; letter-spacing: -.03em; line-height: 1; }
-.wordmark .star { color: var(--brand); font-size: 18px; margin-right: 2px; transform: translateY(-1px); }
+.wordmark { display: inline-flex; align-items: center; line-height: 0; }
+.wordmark img { height: 22px; width: auto; }
+.wordmark-full img { height: 44px; }
 .nav-links { display: none; gap: 24px; font-size: 14px; font-weight: 500; color: var(--muted-foreground); }
 .nav-links a:hover { color: var(--foreground); }
 @media (min-width: 900px) { .nav-links { display: flex; } }

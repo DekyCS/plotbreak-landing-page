@@ -5,20 +5,6 @@
 
 .policy-toolbar { margin-bottom: 32px; display: flex; flex-direction: column; gap: 12px; }
 @media (min-width: 640px) { .policy-toolbar { flex-direction: row; align-items: center; } }
-.version { position: relative; width: 100%; max-width: 384px; }
-@media (min-width: 640px) { .version { width: fit-content; min-width: 160px; } }
-.version > summary {
-  list-style: none; cursor: pointer;
-  display: flex; height: 36px; align-items: center; justify-content: space-between; gap: 8px;
-  border: 1px solid var(--border); background: var(--background); padding: 0 12px;
-  color: var(--foreground); font-size: 14px; line-height: 1; font-weight: 400;
-}
-.version > summary::-webkit-details-marker { display: none; }
-.version > summary:hover { background: var(--muted); }
-.version > summary svg { width: 16px; height: 16px; flex: none; }
-.version > div { position: absolute; z-index: 10; top: calc(100% + 4px); left: 0; min-width: 100%; background: var(--background); border: 1px solid var(--border); padding: 4px; }
-.version > div button { display: block; width: 100%; text-align: left; font-size: 14px; line-height: 1; padding: 8px; color: var(--foreground); }
-.version > div button:hover { background: var(--muted); }
 .policy-back { display: inline-flex; align-items: center; gap: 6px; color: var(--muted-foreground); font-size: 14px; height: 36px; padding: 0 12px; border: 1px solid var(--border); }
 .policy-back:hover { background: var(--muted); color: var(--foreground); }
 .policy-back svg { width: 16px; height: 16px; }

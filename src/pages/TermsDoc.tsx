@@ -7,7 +7,6 @@ export default function TermsDoc() {
 
     <p><strong>Plotbreak TERMS OF SERVICE</strong></p>
 
-    <p>Last Updated: 2026-09-10{"\n"}These Terms apply to all users beginning 2026-09-10. For new users who register after the Last Updated date, these Terms will apply upon registration and acceptance.</p>
 
     <p>These Terms of Service (the <strong>“Terms”</strong>) govern your access to and use of our website located at <a href="https://plotbreak.com">https://plotbreak.com</a> (the <strong>“Website”</strong>), as well as the use of our mobile application, Plotbreak (the <strong>“App”</strong>). These Terms also govern your access to and use of the services and content made available through the Website and the App (together with the Website and the App, the <strong>“Services”</strong>). These Terms are a legally binding agreement between all visitors, users, and others who access or use the Services (<strong>“you”</strong>, <strong>“your”</strong>) and Plotbreak (collectively <strong>“Company,”</strong> <strong>“we,”</strong> <strong>“our,”</strong> or <strong>“us”</strong>). If you are entering into these Terms on behalf of a company, organization, or similar entity, you are agreeing to the Terms for that entity and representing to us that you have the authority to bind such entity to the Terms.</p>
 
@@ -15,7 +14,7 @@ export default function TermsDoc() {
 
     <p><strong>IMPORTANT NOTE: PLEASE READ THESE TERMS CAREFULLY AS THEY MAY IMPACT YOUR LEGAL RIGHTS IN THE EVENT OF A DISPUTE BETWEEN US. SPECIFICALLY, PLEASE REFER TO THE SECTION TITLED “<a href="#disputes">DISPUTE RESOLUTION; ARBITRATION AGREEMENT; CLASS ACTION WAIVER & JURY TRIAL WAIVER</a>”, WHICH REQUIRES THAT DISPUTES BE RESOLVED THROUGH BINDING INDIVIDUAL ARBITRATION RATHER THAN IN COURT, AND WAIVES YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION.</strong></p>
 
-    <p>Except for Section 13 which provides for binding arbitration and waiver of class action rights, we reserve the right to modify these Terms at any time. If we make material changes, we will notify you by posting the updated Terms in the App or on the Website, updating the “Last Updated” date, and, where required by law, by additional notice. Your continued use of the Services after the changes take effect constitutes your acceptance of the modified Terms.</p>
+    <p>Except for Section 13 which provides for binding arbitration and waiver of class action rights, we reserve the right to modify these Terms at any time. If we make material changes, we will notify you by posting the updated Terms in the App or on the Website and, where required by law, by additional notice. The version posted on the Website is always the one in force. Your continued use of the Services after the changes take effect constitutes your acceptance of the modified Terms.</p>
 
     <ol className="heading" start={1}><li><strong>ELIGIBILITY & USER ACCOUNT.</strong></li></ol>
 
@@ -23,7 +22,7 @@ export default function TermsDoc() {
 
     <p>You may only use the Services if you can form a binding contract with Company (either on behalf of yourself or the entity you represent), and only in compliance with these Terms and all applicable laws. You may not use the Services if you have previously been suspended or removed from the Services.</p>
 
-    <p><strong>b. User Account and Registration.</strong> To use the Services you may play as a guest, or register for an account using Sign in with Apple or an emailed sign-in code (a <strong>“User Account”</strong>). A guest account is tied to your device; if you delete the App or lose the device without upgrading to a registered account, your stories and Credit balance may be unrecoverable. You agree to provide accurate information, including your age band, and to keep it current. You are responsible for all activity that occurs under your User Account and for keeping your sign-in codes confidential. You must notify us immediately at <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a> of any unauthorized use of your User Account.</p>
+    <p><strong>b. User Account and Registration.</strong> To use the Services you may play as a guest, or register for an account using Sign in with Apple, Sign in with Google, or an emailed sign-in code (a <strong>“User Account”</strong>). A guest account is tied to your device; if you delete the App or lose the device without upgrading to a registered account, your stories and Credit balance may be unrecoverable. You agree to provide accurate information, including your age band, and to keep it current. You are responsible for all activity that occurs under your User Account and for keeping your sign-in codes confidential. You must notify us immediately at <a href="mailto:support@plotbreak.com">support@plotbreak.com</a> of any unauthorized use of your User Account.</p>
 
     <p>We reserve the right to close, suspend or limit access to your User Account and/or the Services in the event that we determine, in our sole discretion, that you have breached these Terms, misrepresented your age, or used the Services in a manner that may harm us or other users.</p>
 
@@ -54,21 +53,21 @@ export default function TermsDoc() {
 
     <p><strong>a. Credits.</strong> Playing a turn in the Services consumes <strong>“Credits.”</strong> Credits are the internal currency of the Services. Credits are not a substitute for real currency, have no monetary value, are not redeemable for cash, cannot be transferred to another person or account, and are a limited license to use the corresponding features of the Services. We may grant Credits without charge (for example, a starting balance and a daily allowance) and we may change the amount granted, the cost of any turn or quality tier, and the features available at each tier at any time.</p>
 
-    <p><strong>b. Credit Packs; Payment.</strong> Additional Credits may be purchased in the App as one-time, consumable in-app purchases (<strong>“Credit Packs”</strong>). All purchases are processed by Apple (App Store) or Google (Google Play) (each, a <strong>“Payment Processor”</strong>) under their own terms and payment policies. We do not receive or store your payment card details. Prices are displayed in the App before you confirm a purchase and may vary by region. Credits purchased through a Payment Processor are added to your User Account only after our servers have verified the transaction with the Payment Processor; if a purchase completes but is not credited, it will be credited automatically the next time the App launches, or you may use Restore Purchases or contact us.</p>
+    <p><strong>b. Credit Packs; Payment.</strong> Additional Credits may be purchased in the App as one-time, consumable in-app purchases (<strong>“Credit Packs”</strong>). All purchases are processed by Apple through the App Store (the <strong>“Payment Processor”</strong>) under their own terms and payment policies. We do not receive or store your payment card details. Prices are displayed in the App before you confirm a purchase and may vary by region. Credits purchased through a Payment Processor are added to your User Account only after our servers have verified the transaction with the Payment Processor; if a purchase completes but is not credited, it will be credited automatically the next time the App launches, or you may use Restore Purchases or contact us.</p>
 
     <p><strong>c. No Subscriptions; No Auto-Reload.</strong> At this time the Services do not offer subscriptions or automatically recurring purchases. If we introduce them in the future, the applicable terms, price and cancellation method will be disclosed to you before you enroll.</p>
 
-    <p><strong>d. Refunds.</strong> All Credit Pack purchases are final and non-refundable except where required by applicable law or by the refund policies of the Payment Processor. Refund requests for purchases made through the App Store must be submitted to Apple, and requests for purchases made through Google Play must be submitted to Google; we are unable to issue refunds directly for those purchases. If a purchase is refunded or charged back, the corresponding Credits will be deducted from your balance, and your balance may become negative until it is repaid.</p>
+    <p><strong>d. Refunds.</strong> All Credit Pack purchases are final and non-refundable except where required by applicable law or by the refund policies of the Payment Processor. Refund requests must be submitted to Apple through the App Store; we are unable to issue refunds directly for those purchases. If a purchase is refunded or charged back, the corresponding Credits will be deducted from your balance, and your balance may become negative until it is repaid.</p>
 
     <p><strong>e. Credit Expiration; Account Closure.</strong> Purchased Credits do not expire while your User Account remains active. Free Credits may expire or be adjusted at any time. All Credits are forfeited, without compensation, when your User Account is closed by you or terminated by us for breach of these Terms, and unused Credits on a guest account are lost if the App is deleted before the account is registered.</p>
 
-    <p><strong>f. Corrections.</strong> Credit balances and consumption are determined by our records, which are conclusive absent manifest error. If you believe your balance is wrong, contact us at <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a> within 30 days and we will investigate. We may correct any balance that was granted or consumed in error, including as the result of a bug, fraud, or abuse.</p>
+    <p><strong>f. Corrections.</strong> Credit balances and consumption are determined by our records, which are conclusive absent manifest error. If you believe your balance is wrong, contact us at <a href="mailto:support@plotbreak.com">support@plotbreak.com</a> within 30 days and we will investigate. We may correct any balance that was granted or consumed in error, including as the result of a bug, fraud, or abuse.</p>
 
     <p><strong>g. Equal Rules.</strong> The quality tier you choose affects only the presentation of a turn (length, memory depth, and whether scene art is generated). It does not change the rules engine, difficulty, or random outcomes. No purchase confers an advantage in the game.</p>
 
     <ol className="heading" start={4}><li><strong>INTELLECTUAL PROPERTY.</strong></li></ol>
 
-    <p><strong>a. The Services.</strong> As between you and Company, the Services, including without limitation the stories, characters, worlds, artwork, text, rules engine, prompts, software, design, trademarks and all other content and materials (other than your User Content), are owned by Company or its licensors and are protected by copyright, trademark and other laws. Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download and use the App on an Apple- or Google-branded device that you own or control and to use the Services for your personal, non-commercial entertainment. All rights not expressly granted are reserved.</p>
+    <p><strong>a. The Services.</strong> As between you and Company, the Services, including without limitation the stories, characters, worlds, artwork, text, rules engine, prompts, software, design, trademarks and all other content and materials (other than your User Content), are owned by Company or its licensors and are protected by copyright, trademark and other laws. Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download and use the App on an Apple-branded device that you own or control and to use the Services for your personal, non-commercial entertainment. All rights not expressly granted are reserved.</p>
 
     <p><strong>b. User Content.</strong> As between you and Company, you own your User Content. By submitting User Content, you grant Company a worldwide, non-exclusive, royalty-free, sublicensable license to host, store, reproduce, modify, process, and display your User Content, and to create Generated Content from it, for the purposes of operating, providing, securing, evaluating and improving the Services. This license ends when you delete the User Content or your User Account, except to the extent the User Content has been shared by you, is retained in de-identified form, or must be retained to comply with law.</p>
 
@@ -102,7 +101,7 @@ export default function TermsDoc() {
 
     <ol className="heading" start={8}><li><strong>THIRD-PARTY CONTENT.</strong></li></ol>
 
-    <p>The Services may contain links to third-party materials that are not owned or controlled by Company, including the App Store, Google Play and the websites of our vendors. Company does not endorse or assume any responsibility for any such third-party sites, information, materials, products, or services. Your use of them is governed by their own terms and policies.</p>
+    <p>The Services may contain links to third-party materials that are not owned or controlled by Company, including the App Store and the websites of our vendors. Company does not endorse or assume any responsibility for any such third-party sites, information, materials, products, or services. Your use of them is governed by their own terms and policies.</p>
 
     <ol className="heading" start={9}><li><strong>INDEMNIFICATION.</strong></li></ol>
 
@@ -127,7 +126,7 @@ export default function TermsDoc() {
 
     <p><strong>PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR LEGAL RIGHTS.</strong></p>
 
-    <p><strong>a. Informal Resolution.</strong> Before filing a claim against Company, you agree to try to resolve the dispute informally by sending a written notice describing the dispute and the relief you seek to <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>. We will likewise try to resolve any dispute with you informally by contacting you at the email address on your User Account. If a dispute is not resolved within 60 days after the notice is sent, either party may begin arbitration as set out below.</p>
+    <p><strong>a. Informal Resolution.</strong> Before filing a claim against Company, you agree to try to resolve the dispute informally by sending a written notice describing the dispute and the relief you seek to <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>. We will likewise try to resolve any dispute with you informally by contacting you at the email address on your User Account. If a dispute is not resolved within 60 days after the notice is sent, either party may begin arbitration as set out below.</p>
 
     <p><strong>b. Binding Arbitration.</strong> Except for (i) claims that qualify for small claims court and (ii) claims for injunctive relief relating to intellectual property, you and Company agree that any dispute, claim or controversy arising out of or relating to these Terms or the Services will be resolved exclusively by final and binding arbitration administered by the American Arbitration Association (“AAA”) under its Consumer Arbitration Rules. The arbitration will be conducted by a single arbitrator, in English, and may take place by video conference or in the county where you reside. The arbitrator’s award may be entered in any court of competent jurisdiction. Company will pay all AAA filing, administration and arbitrator fees for claims under US$10,000 unless the arbitrator finds the claim frivolous.</p>
     <p><strong>Residents of Canada.</strong> If you reside in Canada, the preceding paragraph applies except that (i) claims that mandatory consumer protection legislation of your province allows you to bring in court notwithstanding an arbitration agreement are also excluded, and (ii) any dispute, claim or controversy arising out of or relating to these Terms or the Services will instead be administered by the ADR Institute of Canada, Inc. under its Arbitration Rules, by a single arbitrator, in English, by video conference or in the city where you reside, with Company paying the filing, administration and arbitrator fees for claims under CA$10,000 unless the arbitrator finds the claim frivolous.</p>
@@ -136,7 +135,7 @@ export default function TermsDoc() {
 
     <p><strong>d. Jury Trial Waiver.</strong> TO THE EXTENT PERMITTED BY LAW, YOU AND COMPANY WAIVE ANY RIGHT TO A JURY TRIAL for any claim that proceeds in court rather than in arbitration.</p>
 
-    <p><strong>e. Opt-Out.</strong> You may opt out of this arbitration agreement by emailing <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a> with the subject line “Arbitration Opt-Out” and the email address on your User Account within 30 days after you first accept these Terms. Opting out does not affect any other provision of these Terms.</p>
+    <p><strong>e. Opt-Out.</strong> You may opt out of this arbitration agreement by emailing <a href="mailto:support@plotbreak.com">support@plotbreak.com</a> with the subject line “Arbitration Opt-Out” and the email address on your User Account within 30 days after you first accept these Terms. Opting out does not affect any other provision of these Terms.</p>
 
     <p><strong>f. Changes.</strong> If we change this Section after you accept these Terms, you may reject the change by emailing us within 30 days of the change, in which case the version of this Section you last accepted will continue to apply to disputes between us.</p>
 
@@ -152,11 +151,11 @@ export default function TermsDoc() {
 
     <p><strong>e. Export.</strong> You agree to comply with all applicable export and re-export control laws and regulations in your use of the Services.</p>
 
-    <p><strong>f. Notices.</strong> We may provide notices to you by email, by posting in the App or on the Website, or by other reasonable means. Notices to Company must be sent to <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>.</p>
+    <p><strong>f. Notices.</strong> We may provide notices to you by email, by posting in the App or on the Website, or by other reasonable means. Notices to Company must be sent to <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>.</p>
 
     <ol className="heading" start={15}><li><strong>CONTACT US.</strong></li></ol>
 
-    <p>If you have any questions about these Terms or the Services, please contact us at <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>.</p>
+    <p>If you have any questions about these Terms or the Services, please contact us at <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>.</p>
   
     </>
   );

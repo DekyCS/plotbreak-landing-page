@@ -7,7 +7,6 @@ export default function PrivacyDoc() {
 
     <p><strong>Plotbreak Privacy Policy</strong></p>
 
-    <p>Last Updated: 2026-09-10. This Policy applies to all users beginning 2026-09-10. For new users who register after the Last Updated date, this Policy applies upon registration and acceptance.</p>
 
     <p>This Privacy Policy applies to the information Plotbreak as a data controller (“Plotbreak,” “we,” “our,” or “us”) collects about you in the course of our business, including through the websites that link to this Privacy Policy; our mobile application, Plotbreak (the “App”); and other related online or offline offerings operated by or on behalf of Plotbreak. We refer to these products, services, applications and offerings collectively as the “Services.”</p>
 
@@ -43,12 +42,12 @@ export default function PrivacyDoc() {
     <p>When you use our Services, you may provide certain information to us. For example, we collect information directly from you when you create or use an Plotbreak account; purchase Credits; play a story; communicate and interact with us; report content; or otherwise voluntarily submit information to us. The categories of information we may collect include:</p>
 
     <ul>
-      <li>Contact and account information, such as your email address, your display name, and login credentials (including a Sign in with Apple identifier if you choose to log in through that method). If you play as a guest, we assign your device an anonymous account identifier.</li>
+      <li>Contact and account information, such as your email address, your display name, and login credentials (including a Sign in with Apple or Sign in with Google identifier if you choose to log in through one of those methods). If you play as a guest, we assign your device an anonymous account identifier.</li>
       <li>Age information, such as the age band you select when you first open the App. We do not collect your date of birth.</li>
       <li>Gameplay content, which includes everything you type into a story session, the story text, checks, state changes and images the Services generate in response, your saved runs, forks, pinned moments, rephrased actions, canon corrections, and any player portrait descriptions you provide.</li>
       <li>Communications information, such as information you provide when you contact customer support, communicate with us by email, respond to surveys, or otherwise interact with us.</li>
-      <li>Financial information, such as payment card information (which is collected and stored by Apple or Google as the payment processor and is never shared with us).</li>
-      <li>Transaction information, such as your purchase and transaction history (including your Credit balance and the receipts we receive from the App Store or Google Play to verify a purchase).</li>
+      <li>Financial information, such as payment card information (which is collected and stored by Apple as the payment processor and is never shared with us).</li>
+      <li>Transaction information, such as your purchase and transaction history (including your Credit balance and the receipts we receive from the App Store to verify a purchase).</li>
       <li>Safety information, such as content you report, accounts you block, and the reason you give when you do so.</li>
       <li>Shared content. If you use the share feature to export a moment from a story, the resulting image or text is created on your device and delivered to whoever you choose to send it to. Anyone who receives it can see and use it in their discretion, so please take care when sharing.</li>
     </ul>
@@ -70,9 +69,9 @@ export default function PrivacyDoc() {
 
     <ol className="heading" start={3}><li><strong>Information we collect from other sources</strong></li></ol>
 
-    <p>We may receive information about you from other sources, such as authentication providers (Apple, when you use Sign in with Apple); app store operators (Apple and Google, to verify and restore purchases); and vendors that help us operate the Services.</p>
+    <p>We may receive information about you from other sources, such as authentication providers (Apple, when you use Sign in with Apple; Google, when you use Sign in with Google); the App Store operator (Apple, to verify and restore purchases); and vendors that help us operate the Services.</p>
 
-    <p>If you connect to a third-party service (such as Sign in with Apple) through the Services, you are authorizing us to collect, store, and use in accordance with this Privacy Policy the information (such as your name or email address, or a relay email address if you choose to hide your email) that you agreed the third party could provide to us based on your settings with that third party. If you would like to limit the information shared in this way, please change your settings with the third party.</p>
+    <p>If you connect to a third-party service (such as Sign in with Apple or Sign in with Google) through the Services, you are authorizing us to collect, store, and use in accordance with this Privacy Policy the information (such as your name or email address, or a relay email address if you choose to hide your email) that you agreed the third party could provide to us based on your settings with that third party. If you would like to limit the information shared in this way, please change your settings with the third party.</p>
 
     <ol className="heading" start={4}><li><strong>De-Identified Information</strong></li></ol>
 
@@ -110,7 +109,7 @@ export default function PrivacyDoc() {
       <li>To personalize your experience, such as remembering your preferences, your chosen quality tier, and where you left off.</li>
       <li>To improve our Services, including bug detection and error reporting, analyzing and improving our rules engine, prompts and models, understanding how users interact with our Services, improving usability and effectiveness of our products, performing research and analytics, and testing and creating new stories, features, and services.</li>
       <li>For safety, including moderating the content you submit, acting on reports and blocks, detecting and preventing abuse, and enforcing our age requirements.</li>
-      <li>For our business operations, including maintaining your account and wallet ledger, verifying purchases with Apple or Google, applying rate limits, and for security, fraud prevention, and legal compliance, such as enforcing our legal terms, detecting security incidents, and protecting against malicious, deceptive, fraudulent, or illegal activity.</li>
+      <li>For our business operations, including maintaining your account and wallet ledger, verifying purchases with Apple, applying rate limits, and for security, fraud prevention, and legal compliance, such as enforcing our legal terms, detecting security incidents, and protecting against malicious, deceptive, fraudulent, or illegal activity.</li>
       <li>Other purposes for which we seek your consent. We may also use your information for a specific purpose that we communicate to you. We will ask for your consent to process your information for such purpose in accordance with applicable legal requirements.</li>
     </ul>
 
@@ -121,8 +120,8 @@ export default function PrivacyDoc() {
     <p>We may disclose your information in the following ways:</p>
 
     <ul>
-      <li>Vendors. We use select third-party vendors to help us provide our Services and operate our business, and we may provide access to or disclose your information to these vendors. They provide a variety of services to us, including authentication and database hosting, cloud infrastructure and storage, AI language and image model processing, content moderation, payment verification (Apple and Google), email delivery, analytics and crash reporting, and legal and auditing services. These vendors are permitted to access and use your information only for purposes of performing services for Plotbreak or to comply with applicable legal requirements.</li>
-      <li>App store operators. When you purchase Credits, Apple or Google processes the payment and shares a transaction record with us so we can credit your account. We never receive your payment card details.</li>
+      <li>Vendors. We use select third-party vendors to help us provide our Services and operate our business, and we may provide access to or disclose your information to these vendors. They provide a variety of services to us, including authentication and database hosting, cloud infrastructure and storage, AI language and image model processing, content moderation, payment verification (Apple), email delivery, analytics and crash reporting, and legal and auditing services. These vendors are permitted to access and use your information only for purposes of performing services for Plotbreak or to comply with applicable legal requirements.</li>
+      <li>App store operators. When you purchase Credits, Apple processes the payment and shares a transaction record with us so we can credit your account. We never receive your payment card details.</li>
       <li>Protection of Plotbreak and others. We may disclose the information we collect about you if required to do so by law or in a good faith belief that such disclosure is reasonably necessary to: (a) comply with legal process (for example, a subpoena or court order); (b) enforce our Terms of Service, this Privacy Policy, or other contracts with you, including investigation of potential violations; (c) respond to claims that any content violates the rights of third parties; or (d) protect the rights, property, or personal safety of Plotbreak, our users, or others.</li>
       <li>Public. At launch, nothing you create in Plotbreak is visible to other users. Content you deliberately export using the share feature is visible to whoever you send it to.</li>
       <li>Business transfers. As we continue to develop our business, we may buy, merge, or partner with other companies. In such transactions, including in contemplation of such transactions, your information may be among the transferred assets. If a portion or all of Plotbreak’s assets are transferred to a third party in these circumstances, we may disclose your information as part of the transaction.</li>
@@ -136,11 +135,11 @@ export default function PrivacyDoc() {
 
     <p>The Services may include links to third-party websites, such as Apple’s or Google’s support pages. Clicking on those links may allow your data to be shared with the relevant third party. We do not control these third-party websites and are not responsible for the content or practices of these sites or of their privacy statements; we therefore recommend that you read the privacy notice of every website you visit.</p>
 
-    <p>Purchases made through the App are subject to the privacy policies of Apple or Google, respectively, in addition to this Privacy Policy.</p>
+    <p>Purchases made through the App are subject to Apple’s privacy policy in addition to this Privacy Policy.</p>
 
     <ol className="heading" start={7}><li><strong>Children’s Privacy</strong></li></ol>
 
-    <p>Our Services are intended for players aged 13 and over and are not directed at children under 13. We ask for your age band when you first open the App, and we do not allow anyone who tells us they are under 13 to create an account. If we become aware that we have collected personal information from a child under 13 (or under the age at which parental consent is required in your jurisdiction) without legally valid parental consent, we will take reasonable steps to delete it as soon as possible. To report such a situation, please contact us at <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>.</p>
+    <p>Our Services are intended for players aged 13 and over and are not directed at children under 13. We ask for your age band when you first open the App, and we do not allow anyone who tells us they are under 13 to create an account. If we become aware that we have collected personal information from a child under 13 (or under the age at which parental consent is required in your jurisdiction) without legally valid parental consent, we will take reasonable steps to delete it as soon as possible. To report such a situation, please contact us at <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>.</p>
 
     <ol className="heading" start={8}><li><strong>Security and Retention of Your Information</strong></li></ol>
 
@@ -156,7 +155,7 @@ export default function PrivacyDoc() {
 
     <ol className="heading" start={9}><li><strong>Your Rights and Choices</strong></li></ol>
 
-    <p>Account information. You may make certain changes to your information, such as your display name, by logging into your account. You can delete your account and all of its stories at any time by going to Profile &gt; Settings &gt; Delete Account in the App, or by emailing us at <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a> from the email address on the account.</p>
+    <p>Account information. You may make certain changes to your information, such as your display name, by logging into your account. You can delete your account and all of its stories at any time by going to Profile &gt; Settings &gt; Delete Account in the App, or by emailing us at <a href="mailto:support@plotbreak.com">support@plotbreak.com</a> from the email address on the account.</p>
 
     <p>Marketing communications. You can opt out of receiving marketing emails from us by following the instructions at the bottom of such emails. After you opt out, you will still receive transactional communications from us regarding your account or important legal information.</p>
 
@@ -174,7 +173,7 @@ export default function PrivacyDoc() {
 
     <p>We may ask you to provide us with information necessary to reasonably verify your identity before responding to your request (e.g., the email on your account and a recent purchase). We will consider all requests and provide our response within the time period required by applicable law. Please note, however, that certain information may be exempt from such requests. If we deny your request in whole or in part, you may have the right to appeal the decision. In such circumstances, we will provide you with information regarding the appeals process.</p>
 
-    <p>To make a request, please contact us at <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>.</p>
+    <p>To make a request, please contact us at <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>.</p>
 
     <p>We do not use your information to make decisions that produce legal or similar effects based solely on the automated processing of your information. Automated moderation may prevent a specific turn from being played; it does not by itself close your account, and you may contact us to have any moderation decision reviewed by a person.</p>
 
@@ -203,8 +202,8 @@ export default function PrivacyDoc() {
             <tr><td>Account Information (log-in identifiers, age band)</td><td>Service providers; entities for legal purposes and the protection of Plotbreak and others; entities for business transactions</td><td>We do not sell or share</td></tr>
             <tr><td>Gameplay Content (what you type and what the game generates)</td><td>Service providers (AI Vendors, moderation, hosting); entities for legal purposes and the protection of Plotbreak and others; entities for business transactions</td><td>We do not sell or share</td></tr>
             <tr><td>Communications Information (e.g., customer service communications with us)</td><td>Service providers; entities for legal purposes and the protection of Plotbreak and others; entities for business transactions</td><td>We do not sell or share</td></tr>
-            <tr><td>Financial Information (e.g., payment card information)</td><td>N/A – this information is collected by Apple or Google as payment processor on our behalf</td><td>We do not sell or share</td></tr>
-            <tr><td>Transaction Information (e.g., purchase history, Credit balance)</td><td>Service providers; app store operators (Apple, Google); entities for legal purposes and the protection of Plotbreak and others; entities for business transactions</td><td>We do not sell or share</td></tr>
+            <tr><td>Financial Information (e.g., payment card information)</td><td>N/A – this information is collected by Apple as payment processor on our behalf</td><td>We do not sell or share</td></tr>
+            <tr><td>Transaction Information (e.g., purchase history, Credit balance)</td><td>Service providers; the App Store operator (Apple); entities for legal purposes and the protection of Plotbreak and others; entities for business transactions</td><td>We do not sell or share</td></tr>
             <tr><td>Network Usage and Device Information (e.g., usage events, IP address, device identifiers)</td><td>Service providers (analytics, crash reporting, hosting); entities for legal purposes and the protection of Plotbreak and others; entities for business transactions</td><td>We do not sell or share</td></tr>
             <tr><td>Inferences (e.g., which stories or tiers you are likely to prefer)</td><td>Service providers; entities for business transactions</td><td>We do not sell or share</td></tr>
           </tbody>
@@ -228,13 +227,13 @@ export default function PrivacyDoc() {
 
       <p>If you are a resident of Canada, the Personal Information Protection and Electronic Documents Act (“PIPEDA”) and substantially similar provincial laws (including Quebec’s Law 25) apply to our collection, use and disclosure of your personal information. This section supplements the rest of this Privacy Policy.</p>
 
-      <p>Consent. By using the Services you consent to the collection, use and disclosure of your personal information as described in this Privacy Policy. Where your consent is implied, it is implied from your action or inaction at the point of collection, for example when you type into a story knowing that it is sent to an AI Vendor to be processed. You may withdraw your consent at any time, subject to legal or contractual restrictions and reasonable notice, by contacting us at <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a> or by deleting your account. Withdrawing consent may mean we can no longer provide the Services to you.</p>
+      <p>Consent. By using the Services you consent to the collection, use and disclosure of your personal information as described in this Privacy Policy. Where your consent is implied, it is implied from your action or inaction at the point of collection, for example when you type into a story knowing that it is sent to an AI Vendor to be processed. You may withdraw your consent at any time, subject to legal or contractual restrictions and reasonable notice, by contacting us at <a href="mailto:support@plotbreak.com">support@plotbreak.com</a> or by deleting your account. Withdrawing consent may mean we can no longer provide the Services to you.</p>
 
       <p>Transfers outside Canada. Your personal information is stored and processed in the United States, and may be processed by our vendors in other countries. While your information is outside Canada it is subject to the laws of the jurisdiction in which it is located, and may be accessible to law enforcement and national security authorities of that jurisdiction. We use contractual and other safeguards to require a comparable level of protection.</p>
 
       <p>Access and correction. You have the right to request access to the personal information we hold about you, to challenge its accuracy and completeness, and to have it amended as appropriate. You also have the right to know to which third parties we have disclosed your personal information. We will respond to your request within 30 days unless an extension is permitted by law. There is no fee for a reasonable access request.</p>
 
-      <p>Quebec residents. If you reside in Quebec, you also have the right to request that we cease disseminating your personal information and to de-index any hyperlink attached to your name, and to receive computerized personal information you provided to us in a structured, commonly used technological format. We do not make decisions based exclusively on automated processing that produce legal or similarly significant effects. Our person in charge of the protection of personal information can be reached at <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>.</p>
+      <p>Quebec residents. If you reside in Quebec, you also have the right to request that we cease disseminating your personal information and to de-index any hyperlink attached to your name, and to receive computerized personal information you provided to us in a structured, commonly used technological format. We do not make decisions based exclusively on automated processing that produce legal or similarly significant effects. Our person in charge of the protection of personal information can be reached at <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>.</p>
 
       <p>Complaints. If you are not satisfied with our response to a privacy concern, you may contact the Office of the Privacy Commissioner of Canada or the privacy regulator of your province.</p>
     <ol className="heading" start={12}><li><strong>Information for International Users</strong></li></ol>
@@ -245,11 +244,11 @@ export default function PrivacyDoc() {
 
     <ol className="heading" start={13}><li><strong>Changes to our Privacy Policy</strong></li></ol>
 
-    <p>We may change or update this Privacy Policy from time to time. If we do so, we will post an updated version of this Privacy Policy and will provide you with additional notice of any material changes as required by law. By continuing to use the Services, you are confirming that you have read and understood the latest version of this Privacy Policy.</p>
+    <p>We may change or update this Privacy Policy from time to time. If we do so, we will post the current version of this Privacy Policy at this address and will provide you with additional notice of any material changes as required by law. The version posted here is always the one in force. By continuing to use the Services, you are confirming that you have read and understood the latest version of this Privacy Policy.</p>
 
     <ol className="heading" start={14}><li><strong>Contact us</strong></li></ol>
 
-    <p>If you wish to contact us or have any questions about or complaints in relation to this Privacy Policy, please contact us at <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>.</p>
+    <p>If you wish to contact us or have any questions about or complaints in relation to this Privacy Policy, please contact us at <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>.</p>
 
     <p>We designate a privacy officer to take overall responsibility for tasks relating to information processing, and to handle rights requests and complaints in connection with information processing.</p>
 
@@ -257,7 +256,7 @@ export default function PrivacyDoc() {
 
     <p>Title: Founder</p>
 
-    <p>Contact: <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a></p>
+    <p>Contact: <a href="mailto:support@plotbreak.com">support@plotbreak.com</a></p>
   
     </>
   );

@@ -162,7 +162,7 @@
 .faq .a a { color: var(--blue); text-decoration: underline; text-underline-offset: 4px; }
 
 /* CTA */
-.cta { padding-block: 72px; text-align: center; border-top: 1px solid var(--border); background: radial-gradient(60% 80% at 50% 0%, rgba(224,255,46,.08), transparent 70%); }
+.cta { padding-block: 72px; text-align: center; border-top: 1px solid var(--border); background: radial-gradient(60% 80% at 50% 0%, rgba(124,108,255,.12), transparent 70%); }
 .cta img { width: 72px; height: 72px; border-radius: 18px; border: 1px solid var(--border-strong); margin: 0 auto 20px; }
 .cta h2 { font-size: clamp(30px, 5vw, 48px); font-weight: 800; letter-spacing: -.035em; text-transform: uppercase; line-height: 1; }
 .cta p { color: var(--muted-foreground); margin-top: 12px; font-size: 15px; }

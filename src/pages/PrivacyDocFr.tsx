@@ -7,7 +7,6 @@ export default function PrivacyDocFr() {
     <>
     <p><strong>Politique de confidentialité de Plotbreak</strong></p>
 
-    <p>Dernière mise à jour : 2026-09-10. La présente politique s’applique à tous les utilisateurs à compter du 2026-09-10. Pour les nouveaux utilisateurs qui s’inscrivent après la date de dernière mise à jour, elle s’applique dès l’inscription et l’acceptation.</p>
 
     <p>La présente Politique de confidentialité s’applique aux renseignements que Plotbreak, à titre de responsable du traitement (« Plotbreak », « nous », « notre » ou « nos »), recueille à votre sujet dans le cadre de ses activités, notamment par l’entremise des sites Web qui renvoient à la présente politique, de notre application mobile Plotbreak (l’« Application ») et des autres offres en ligne ou hors ligne exploitées par Plotbreak ou en son nom. Nous désignons collectivement ces produits, services, applications et offres comme les « Services ».</p>
 
@@ -43,12 +42,12 @@ export default function PrivacyDocFr() {
     <p>Lorsque vous utilisez nos Services, vous pouvez nous fournir certains renseignements. Par exemple, nous recueillons des renseignements directement auprès de vous lorsque vous créez ou utilisez un compte Plotbreak; achetez des Crédits; jouez une histoire; communiquez et interagissez avec nous; signalez du contenu; ou nous transmettez autrement des renseignements de votre plein gré. Les catégories de renseignements que nous pouvons recueillir comprennent :</p>
 
     <ul>
-      <li>Coordonnées et renseignements de compte, comme votre adresse courriel, votre nom d’affichage et vos identifiants de connexion (y compris un identifiant Se connecter avec Apple si vous choisissez ce mode de connexion). Si vous jouez en tant qu’invité, nous attribuons à votre appareil un identifiant de compte anonyme.</li>
+      <li>Coordonnées et renseignements de compte, comme votre adresse courriel, votre nom d’affichage et vos identifiants de connexion (y compris un identifiant Se connecter avec Apple ou Se connecter avec Google si vous choisissez l’un de ces modes de connexion). Si vous jouez en tant qu’invité, nous attribuons à votre appareil un identifiant de compte anonyme.</li>
       <li>Renseignements sur l’âge, comme la tranche d’âge que vous sélectionnez à la première ouverture de l’Application. Nous ne recueillons pas votre date de naissance.</li>
       <li>Contenu de jeu, soit tout ce que vous saisissez dans une session d’histoire, le texte de l’histoire, les jets, les changements d’état et les images que les Services génèrent en réponse, vos parties sauvegardées, vos bifurcations, vos moments épinglés, vos actions reformulées, vos corrections de canon et toute description de portrait de joueur que vous fournissez.</li>
       <li>Renseignements de communication, comme ceux que vous fournissez lorsque vous communiquez avec le soutien à la clientèle, nous écrivez par courriel, répondez à des sondages ou interagissez autrement avec nous.</li>
-      <li>Renseignements financiers, comme les données de carte de paiement (qui sont recueillies et conservées par Apple ou Google à titre de processeur de paiement et ne nous sont jamais transmises).</li>
-      <li>Renseignements sur les transactions, comme votre historique d’achats et de transactions (y compris votre solde de Crédits et les reçus que nous recevons de l’App Store ou de Google Play pour vérifier un achat).</li>
+      <li>Renseignements financiers, comme les données de carte de paiement (qui sont recueillies et conservées par Apple à titre de processeur de paiement et ne nous sont jamais transmises).</li>
+      <li>Renseignements sur les transactions, comme votre historique d’achats et de transactions (y compris votre solde de Crédits et les reçus que nous recevons de l’App Store pour vérifier un achat).</li>
       <li>Renseignements de sécurité, comme le contenu que vous signalez, les comptes que vous bloquez et la raison que vous indiquez.</li>
       <li>Contenu partagé. Si vous utilisez la fonction de partage pour exporter un moment d’une histoire, l’image ou le texte produit est créé sur votre appareil et remis à la personne de votre choix. Quiconque le reçoit peut le voir et l’utiliser à sa discrétion; faites donc preuve de prudence lorsque vous partagez.</li>
     </ul>
@@ -70,9 +69,9 @@ export default function PrivacyDocFr() {
 
     <ol className="heading" start={3}><li><strong>Renseignements que nous obtenons d’autres sources</strong></li></ol>
 
-    <p>Nous pouvons recevoir des renseignements à votre sujet d’autres sources, comme les fournisseurs d’authentification (Apple, lorsque vous utilisez Se connecter avec Apple); les exploitants de boutiques d’applications (Apple et Google, pour vérifier et restaurer les achats); et les fournisseurs qui nous aident à exploiter les Services.</p>
+    <p>Nous pouvons recevoir des renseignements à votre sujet d’autres sources, comme les fournisseurs d’authentification (Apple, lorsque vous utilisez Se connecter avec Apple; Google, lorsque vous utilisez Se connecter avec Google); l’exploitant de l’App Store (Apple, pour vérifier et restaurer les achats); et les fournisseurs qui nous aident à exploiter les Services.</p>
 
-    <p>Si vous vous connectez à un service tiers (comme Se connecter avec Apple) par l’entremise des Services, vous nous autorisez à recueillir, à conserver et à utiliser, conformément à la présente politique, les renseignements (comme votre nom ou votre adresse courriel, ou une adresse de relais si vous choisissez de masquer votre courriel) que vous avez accepté que le tiers nous transmette selon vos paramètres auprès de ce tiers. Pour limiter les renseignements partagés de cette façon, modifiez vos paramètres auprès du tiers.</p>
+    <p>Si vous vous connectez à un service tiers (comme Se connecter avec Apple ou Se connecter avec Google) par l’entremise des Services, vous nous autorisez à recueillir, à conserver et à utiliser, conformément à la présente politique, les renseignements (comme votre nom ou votre adresse courriel, ou une adresse de relais si vous choisissez de masquer votre courriel) que vous avez accepté que le tiers nous transmette selon vos paramètres auprès de ce tiers. Pour limiter les renseignements partagés de cette façon, modifiez vos paramètres auprès du tiers.</p>
 
     <ol className="heading" start={4}><li><strong>Renseignements dépersonnalisés</strong></li></ol>
 
@@ -110,7 +109,7 @@ export default function PrivacyDocFr() {
       <li>Personnaliser votre expérience, comme mémoriser vos préférences, votre palier de qualité et l’endroit où vous vous êtes arrêté.</li>
       <li>Améliorer nos Services, notamment détecter les bogues et signaler les erreurs, analyser et améliorer notre moteur de règles, nos instructions et nos modèles, comprendre comment les utilisateurs interagissent avec les Services, améliorer la convivialité et l’efficacité de nos produits, effectuer de la recherche et de l’analyse, et tester et créer de nouvelles histoires, fonctionnalités et services.</li>
       <li>Assurer la sécurité, notamment modérer le contenu que vous soumettez, donner suite aux signalements et aux blocages, détecter et prévenir les abus et faire respecter nos exigences d’âge.</li>
-      <li>Exploiter notre entreprise, notamment tenir votre compte et votre registre de portefeuille, vérifier les achats auprès d’Apple ou de Google, appliquer des limites de débit, et assurer la sécurité, la prévention de la fraude et la conformité légale, comme faire respecter nos conditions, détecter les incidents de sécurité et nous protéger contre les activités malveillantes, trompeuses, frauduleuses ou illégales.</li>
+      <li>Exploiter notre entreprise, notamment tenir votre compte et votre registre de portefeuille, vérifier les achats auprès d’Apple, appliquer des limites de débit, et assurer la sécurité, la prévention de la fraude et la conformité légale, comme faire respecter nos conditions, détecter les incidents de sécurité et nous protéger contre les activités malveillantes, trompeuses, frauduleuses ou illégales.</li>
       <li>Toute autre fin pour laquelle nous demandons votre consentement. Nous pouvons aussi utiliser vos renseignements à une fin précise que nous vous communiquons. Nous demanderons votre consentement pour traiter vos renseignements à cette fin conformément aux exigences légales applicables.</li>
     </ul>
 
@@ -121,8 +120,8 @@ export default function PrivacyDocFr() {
     <p>Nous pouvons communiquer vos renseignements de la façon suivante :</p>
 
     <ul>
-      <li>Fournisseurs. Nous faisons appel à certains fournisseurs tiers pour nous aider à offrir nos Services et à exploiter notre entreprise, et nous pouvons leur donner accès à vos renseignements ou les leur communiquer. Ils nous offrent divers services, notamment l’authentification et l’hébergement de bases de données, l’infrastructure et le stockage infonuagiques, le traitement par des modèles de langage et d’image, la modération de contenu, la vérification des paiements (Apple et Google), l’envoi de courriels, l’analyse et le signalement des plantages, ainsi que des services juridiques et de vérification. Ces fournisseurs ne peuvent accéder à vos renseignements et les utiliser qu’aux fins de l’exécution de services pour Plotbreak ou pour se conformer aux exigences légales applicables.</li>
-      <li>Exploitants de boutiques d’applications. Lorsque vous achetez des Crédits, Apple ou Google traite le paiement et nous transmet un relevé de transaction pour que nous puissions créditer votre compte. Nous ne recevons jamais les données de votre carte de paiement.</li>
+      <li>Fournisseurs. Nous faisons appel à certains fournisseurs tiers pour nous aider à offrir nos Services et à exploiter notre entreprise, et nous pouvons leur donner accès à vos renseignements ou les leur communiquer. Ils nous offrent divers services, notamment l’authentification et l’hébergement de bases de données, l’infrastructure et le stockage infonuagiques, le traitement par des modèles de langage et d’image, la modération de contenu, la vérification des paiements (Apple), l’envoi de courriels, l’analyse et le signalement des plantages, ainsi que des services juridiques et de vérification. Ces fournisseurs ne peuvent accéder à vos renseignements et les utiliser qu’aux fins de l’exécution de services pour Plotbreak ou pour se conformer aux exigences légales applicables.</li>
+      <li>Exploitants de boutiques d’applications. Lorsque vous achetez des Crédits, Apple traite le paiement et nous transmet un relevé de transaction pour que nous puissions créditer votre compte. Nous ne recevons jamais les données de votre carte de paiement.</li>
       <li>Protection de Plotbreak et d’autrui. Nous pouvons communiquer les renseignements que nous recueillons à votre sujet si la loi l’exige ou si nous croyons de bonne foi qu’une telle communication est raisonnablement nécessaire pour : (a) nous conformer à une procédure judiciaire (par exemple, une assignation ou une ordonnance d’un tribunal); (b) faire respecter nos Conditions d’utilisation, la présente politique ou d’autres contrats conclus avec vous, y compris enquêter sur des violations potentielles; (c) répondre à des allégations selon lesquelles un contenu viole les droits de tiers; ou (d) protéger les droits, les biens ou la sécurité personnelle de Plotbreak, de nos utilisateurs ou d’autrui.</li>
       <li>Public. Au lancement, rien de ce que vous créez dans Plotbreak n’est visible par les autres utilisateurs. Le contenu que vous exportez délibérément au moyen de la fonction de partage est visible par les personnes à qui vous l’envoyez.</li>
       <li>Transferts d’entreprise. Au fil du développement de notre entreprise, nous pourrions acheter d’autres sociétés, fusionner avec elles ou nous associer à elles. Dans le cadre de telles transactions, y compris en prévision de celles-ci, vos renseignements pourraient faire partie des actifs transférés. Si une partie ou la totalité des actifs de Plotbreak est transférée à un tiers dans ces circonstances, nous pouvons communiquer vos renseignements dans le cadre de la transaction.</li>
@@ -140,7 +139,7 @@ export default function PrivacyDocFr() {
 
     <ol className="heading" start={7}><li><strong>Vie privée des enfants</strong></li></ol>
 
-    <p>Nos Services s’adressent aux joueurs de 13 ans et plus et ne sont pas destinés aux enfants de moins de 13 ans. Nous vous demandons votre tranche d’âge à la première ouverture de l’Application, et nous ne permettons pas à quiconque nous indique avoir moins de 13 ans de créer un compte. Si nous apprenons que nous avons recueilli des renseignements personnels d’un enfant de moins de 13 ans (ou d’un âge inférieur à celui auquel le consentement parental est requis dans votre juridiction) sans consentement parental valide, nous prendrons des mesures raisonnables pour les supprimer dès que possible. Pour signaler une telle situation, écrivez-nous à <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>.</p>
+    <p>Nos Services s’adressent aux joueurs de 13 ans et plus et ne sont pas destinés aux enfants de moins de 13 ans. Nous vous demandons votre tranche d’âge à la première ouverture de l’Application, et nous ne permettons pas à quiconque nous indique avoir moins de 13 ans de créer un compte. Si nous apprenons que nous avons recueilli des renseignements personnels d’un enfant de moins de 13 ans (ou d’un âge inférieur à celui auquel le consentement parental est requis dans votre juridiction) sans consentement parental valide, nous prendrons des mesures raisonnables pour les supprimer dès que possible. Pour signaler une telle situation, écrivez-nous à <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>.</p>
 
     <ol className="heading" start={8}><li><strong>Sécurité et conservation de vos renseignements</strong></li></ol>
 
@@ -156,7 +155,7 @@ export default function PrivacyDocFr() {
 
     <ol className="heading" start={9}><li><strong>Vos droits et vos choix</strong></li></ol>
 
-    <p>Renseignements de compte. Vous pouvez modifier certains renseignements, comme votre nom d’affichage, en vous connectant à votre compte. Vous pouvez supprimer votre compte et toutes ses histoires à tout moment en allant à Profil &gt; Réglages &gt; Supprimer le compte dans l’Application, ou en nous écrivant à <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a> à partir de l’adresse courriel associée au compte.</p>
+    <p>Renseignements de compte. Vous pouvez modifier certains renseignements, comme votre nom d’affichage, en vous connectant à votre compte. Vous pouvez supprimer votre compte et toutes ses histoires à tout moment en allant à Profil &gt; Réglages &gt; Supprimer le compte dans l’Application, ou en nous écrivant à <a href="mailto:support@plotbreak.com">support@plotbreak.com</a> à partir de l’adresse courriel associée au compte.</p>
 
     <p>Communications marketing. Vous pouvez refuser de recevoir nos courriels marketing en suivant les instructions au bas de ces courriels. Après votre refus, vous continuerez de recevoir des communications transactionnelles concernant votre compte ou des renseignements juridiques importants.</p>
 
@@ -174,7 +173,7 @@ export default function PrivacyDocFr() {
 
     <p>Nous pourrions vous demander de fournir les renseignements nécessaires pour vérifier raisonnablement votre identité avant de répondre à votre demande (par exemple, l’adresse courriel de votre compte et un achat récent). Nous examinerons toutes les demandes et y répondrons dans le délai prévu par la loi applicable. Veuillez toutefois noter que certains renseignements peuvent être exemptés de ces demandes. Si nous refusons votre demande en tout ou en partie, vous pourriez avoir le droit d’interjeter appel. Dans ce cas, nous vous fournirons des renseignements sur le processus d’appel.</p>
 
-    <p>Pour présenter une demande, écrivez-nous à <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>.</p>
+    <p>Pour présenter une demande, écrivez-nous à <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>.</p>
 
     <p>Nous n’utilisons pas vos renseignements pour prendre des décisions produisant des effets juridiques ou similaires fondées uniquement sur un traitement automatisé. La modération automatisée peut empêcher un tour précis d’être joué; elle ne ferme pas votre compte à elle seule, et vous pouvez nous demander qu’une décision de modération soit examinée par une personne.</p>
 
@@ -202,8 +201,8 @@ export default function PrivacyDocFr() {
           <tr><td>Renseignements de compte (identifiants de connexion, tranche d’âge)</td><td>Fournisseurs de services; entités à des fins juridiques et de protection de Plotbreak et d’autrui; entités dans le cadre de transactions d’entreprise</td><td>Nous ne vendons ni ne partageons</td></tr>
           <tr><td>Contenu de jeu (ce que vous écrivez et ce que le jeu génère)</td><td>Fournisseurs de services (Fournisseurs d’IA, modération, hébergement); entités à des fins juridiques et de protection de Plotbreak et d’autrui; entités dans le cadre de transactions d’entreprise</td><td>Nous ne vendons ni ne partageons</td></tr>
           <tr><td>Renseignements de communication (p. ex. échanges avec le service à la clientèle)</td><td>Fournisseurs de services; entités à des fins juridiques et de protection de Plotbreak et d’autrui; entités dans le cadre de transactions d’entreprise</td><td>Nous ne vendons ni ne partageons</td></tr>
-          <tr><td>Renseignements financiers (p. ex. données de carte de paiement)</td><td>S. O. – ces renseignements sont recueillis par Apple ou Google à titre de processeur de paiement en notre nom</td><td>Nous ne vendons ni ne partageons</td></tr>
-          <tr><td>Renseignements sur les transactions (p. ex. historique d’achats, solde de Crédits)</td><td>Fournisseurs de services; exploitants de boutiques d’applications (Apple, Google); entités à des fins juridiques et de protection de Plotbreak et d’autrui; entités dans le cadre de transactions d’entreprise</td><td>Nous ne vendons ni ne partageons</td></tr>
+          <tr><td>Renseignements financiers (p. ex. données de carte de paiement)</td><td>S. O. – ces renseignements sont recueillis par Apple à titre de processeur de paiement en notre nom</td><td>Nous ne vendons ni ne partageons</td></tr>
+          <tr><td>Renseignements sur les transactions (p. ex. historique d’achats, solde de Crédits)</td><td>Fournisseurs de services; l’exploitant de l’App Store (Apple); entités à des fins juridiques et de protection de Plotbreak et d’autrui; entités dans le cadre de transactions d’entreprise</td><td>Nous ne vendons ni ne partageons</td></tr>
           <tr><td>Renseignements sur l’utilisation du réseau et l’appareil (p. ex. événements d’utilisation, adresse IP, identifiants d’appareil)</td><td>Fournisseurs de services (analyse, signalement des plantages, hébergement); entités à des fins juridiques et de protection de Plotbreak et d’autrui; entités dans le cadre de transactions d’entreprise</td><td>Nous ne vendons ni ne partageons</td></tr>
           <tr><td>Inférences (p. ex. les histoires ou paliers que vous êtes susceptible de préférer)</td><td>Fournisseurs de services; entités dans le cadre de transactions d’entreprise</td><td>Nous ne vendons ni ne partageons</td></tr>
         </tbody>
@@ -226,13 +225,13 @@ export default function PrivacyDocFr() {
 
     <p>Si vous résidez au Canada, la Loi sur la protection des renseignements personnels et les documents électroniques (« LPRPDE ») et les lois provinciales essentiellement similaires (y compris la Loi 25 du Québec) s’appliquent à notre collecte, à notre utilisation et à notre communication de vos renseignements personnels. La présente section complète le reste de la politique.</p>
 
-    <p>Consentement. En utilisant les Services, vous consentez à la collecte, à l’utilisation et à la communication de vos renseignements personnels tels que décrits dans la présente politique. Lorsque votre consentement est implicite, il découle de votre action ou de votre inaction au moment de la collecte, par exemple lorsque vous écrivez dans une histoire en sachant que le texte est transmis à un Fournisseur d’IA pour traitement. Vous pouvez retirer votre consentement à tout moment, sous réserve de restrictions légales ou contractuelles et d’un préavis raisonnable, en nous écrivant à <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a> ou en supprimant votre compte. Le retrait de votre consentement peut signifier que nous ne pourrons plus vous fournir les Services.</p>
+    <p>Consentement. En utilisant les Services, vous consentez à la collecte, à l’utilisation et à la communication de vos renseignements personnels tels que décrits dans la présente politique. Lorsque votre consentement est implicite, il découle de votre action ou de votre inaction au moment de la collecte, par exemple lorsque vous écrivez dans une histoire en sachant que le texte est transmis à un Fournisseur d’IA pour traitement. Vous pouvez retirer votre consentement à tout moment, sous réserve de restrictions légales ou contractuelles et d’un préavis raisonnable, en nous écrivant à <a href="mailto:support@plotbreak.com">support@plotbreak.com</a> ou en supprimant votre compte. Le retrait de votre consentement peut signifier que nous ne pourrons plus vous fournir les Services.</p>
 
     <p>Transferts à l’extérieur du Canada. Vos renseignements personnels sont conservés et traités aux États-Unis, et peuvent être traités par nos fournisseurs dans d’autres pays. Lorsqu’ils se trouvent à l’extérieur du Canada, ils sont assujettis aux lois de la juridiction où ils se trouvent et peuvent être accessibles aux autorités d’application de la loi et de sécurité nationale de cette juridiction. Nous utilisons des mesures contractuelles et autres pour exiger un niveau de protection comparable.</p>
 
     <p>Accès et rectification. Vous avez le droit de demander l’accès aux renseignements personnels que nous détenons à votre sujet, d’en contester l’exactitude et l’exhaustivité et de les faire modifier au besoin. Vous avez aussi le droit de savoir à quels tiers nous avons communiqué vos renseignements personnels. Nous répondrons à votre demande dans un délai de 30 jours, sauf prolongation permise par la loi. Aucuns frais ne sont exigés pour une demande d’accès raisonnable.</p>
 
-    <p>Résidents du Québec. Si vous résidez au Québec, vous avez également le droit de demander que nous cessions la diffusion de vos renseignements personnels et que nous désindexions tout hyperlien rattaché à votre nom, ainsi que de recevoir les renseignements personnels informatisés que vous nous avez fournis dans un format technologique structuré et couramment utilisé. Nous ne prenons pas de décisions fondées exclusivement sur un traitement automatisé produisant des effets juridiques ou similaires importants. Notre personne responsable de la protection des renseignements personnels peut être jointe à <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>.</p>
+    <p>Résidents du Québec. Si vous résidez au Québec, vous avez également le droit de demander que nous cessions la diffusion de vos renseignements personnels et que nous désindexions tout hyperlien rattaché à votre nom, ainsi que de recevoir les renseignements personnels informatisés que vous nous avez fournis dans un format technologique structuré et couramment utilisé. Nous ne prenons pas de décisions fondées exclusivement sur un traitement automatisé produisant des effets juridiques ou similaires importants. Notre personne responsable de la protection des renseignements personnels peut être jointe à <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>.</p>
 
     <p>Plaintes. Si vous n’êtes pas satisfait de notre réponse à une préoccupation relative à la vie privée, vous pouvez communiquer avec le Commissariat à la protection de la vie privée du Canada ou avec l’autorité de protection de la vie privée de votre province (au Québec, la Commission d’accès à l’information).</p>
 
@@ -244,11 +243,11 @@ export default function PrivacyDocFr() {
 
     <ol className="heading" start={13}><li><strong>Modifications de la présente politique</strong></li></ol>
 
-    <p>Nous pouvons modifier ou mettre à jour la présente Politique de confidentialité de temps à autre. Le cas échéant, nous en publierons une version mise à jour et vous aviserons de toute modification importante conformément à la loi. En continuant d’utiliser les Services, vous confirmez avoir lu et compris la version la plus récente de la présente politique.</p>
+    <p>Nous pouvons modifier ou mettre à jour la présente Politique de confidentialité de temps à autre. Le cas échéant, nous publierons la version en vigueur à cette adresse et vous aviserons de toute modification importante conformément à la loi. La version publiée ici est toujours celle qui s’applique. En continuant d’utiliser les Services, vous confirmez avoir lu et compris la version la plus récente de la présente politique.</p>
 
     <ol className="heading" start={14}><li><strong>Nous joindre</strong></li></ol>
 
-    <p>Pour nous joindre, poser une question ou formuler une plainte au sujet de la présente Politique de confidentialité, écrivez-nous à <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a>.</p>
+    <p>Pour nous joindre, poser une question ou formuler une plainte au sujet de la présente Politique de confidentialité, écrivez-nous à <a href="mailto:support@plotbreak.com">support@plotbreak.com</a>.</p>
 
     <p>Nous désignons une personne responsable de la protection des renseignements personnels qui assume la responsabilité globale des tâches liées au traitement des renseignements et qui traite les demandes d’exercice de droits et les plaintes à ce sujet.</p>
 
@@ -256,7 +255,7 @@ export default function PrivacyDocFr() {
 
     <p>Titre : Fondateur</p>
 
-    <p>Contact : <a href="mailto:hi@cielpm.ai">hi@cielpm.ai</a></p>
+    <p>Contact : <a href="mailto:support@plotbreak.com">support@plotbreak.com</a></p>
 
     <p><em>En cas de divergence entre la présente version française et la <Link to="/privacy">version anglaise</Link>, la version française prévaut pour les résidents du Québec; ailleurs, la version anglaise prévaut.</em></p>
     </>

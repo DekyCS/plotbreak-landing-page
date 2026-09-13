@@ -3,11 +3,13 @@ import { APP_NAME, APP_STORE_URL, SUPPORT_EMAIL } from '../config';
 import { AppleLogo } from './Icons';
 import { useLocale, rememberLocale, stripLocale } from '../i18n';
 
-export function Wordmark() {
-  const { t, path } = useLocale();
+/** The brand lockup. `full` adds the tagline row (localised); the default is the compact bar + PLOTBREAK. */
+export function Wordmark({ full = false }: { full?: boolean }) {
+  const { t, path, locale } = useLocale();
+  const src = full ? `/assets/logo-${locale}.png` : '/assets/logo-compact.png';
   return (
-    <Link to={path('/')} className="wordmark" aria-label={t.nav.home}>
-      <span className="star">✱</span>{APP_NAME}
+    <Link to={path('/')} className={full ? 'wordmark wordmark-full' : 'wordmark'} aria-label={t.nav.home}>
+      <img src={src} alt={APP_NAME} decoding="async" />
     </Link>
   );
 }
@@ -67,7 +69,7 @@ export function Footer() {
     <footer className="footer">
       <div className="wrap">
         <div>
-          <Wordmark />
+          <Wordmark full />
           <p className="blurb">{t.footer.blurb}</p>
         </div>
         <div>
