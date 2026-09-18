@@ -47,7 +47,7 @@ English is the default. A first visit from a French browser redirects `/` to `/f
 
 | What | Where |
 | --- | --- |
-| App Store link | `src/config.ts` → `APP_STORE_URL`. Every App Store button picks it up. |
+| App Store link | `src/config.ts` → `APP_STORE_URL` (one per language). Every App Store button picks it up. |
 | Support email | `src/config.ts` → `SUPPORT_EMAIL` (also hard-coded in the two policy docs; search `support@plotbreak.com`). |
 | Legal entity | Both policies name "Plotbreak" as the operator. If you launch under an LLC/Inc, replace the first occurrence in each doc. |
 | Governing law | `TermsDoc.tsx` §12 assumes Delaware, with an Ontario paragraph for residents of Canada. |

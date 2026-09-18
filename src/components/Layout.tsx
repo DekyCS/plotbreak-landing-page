@@ -16,11 +16,9 @@ export function Wordmark({ full = false }: { full?: boolean }) {
 
 /** Every "get the app" button goes through here so the store link is set once. */
 export function StoreButton({ className = 'btn btn-white', children }: { className?: string; children?: React.ReactNode }) {
-  const { t, path } = useLocale();
-  const href = APP_STORE_URL || `${path('/')}#download`;
-  const external = Boolean(APP_STORE_URL);
+  const { t, locale } = useLocale();
   return (
-    <a className={className} href={href} target={external ? '_blank' : undefined} rel={external ? 'noopener' : undefined}>
+    <a className={className} href={APP_STORE_URL[locale]} target="_blank" rel="noopener">
       <AppleLogo />
       {children ?? t.nav.store}
     </a>
