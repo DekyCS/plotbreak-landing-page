@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Footer, StoreButton } from '../components/Layout';
+import { Nav, Footer, StoreButton, DiscordButton } from '../components/Layout';
 import CoverStack from '../components/CoverStack';
-import { ArrowRight, Icon } from '../components/Icons';
+import { ArrowRight, DiscordLogo, Icon } from '../components/Icons';
 import { WORLDS, coverSrc, matchesGenre } from '../data/worlds';
 import { useLocale } from '../i18n';
 
@@ -211,6 +211,21 @@ export default function Home() {
                   </div>
                 </details>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Community */}
+        <section className="section" id="community">
+          <div className="wrap">
+            <div className="card community reveal">
+              <div className="community-mark" aria-hidden="true"><DiscordLogo /></div>
+              <div className="community-copy">
+                <span className="star-line">{t.community.eyebrow}</span>
+                <h2>{t.community.title}</h2>
+                <p>{t.community.lede}</p>
+              </div>
+              <DiscordButton className="btn btn-discord btn-lg">{t.community.join}</DiscordButton>
             </div>
           </div>
         </section>

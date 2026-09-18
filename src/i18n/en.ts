@@ -137,6 +137,13 @@ const en = {
     linkPrefix: 'Full details are in the',
     linkLabel: 'Privacy Policy',
   },
+  community: {
+    eyebrow: 'Community',
+    title: 'Come hang out on Discord.',
+    lede: 'Share your wildest runs, see what other players found, and tell us which world to build next.',
+    join: 'Join the Discord',
+    navLabel: 'Join the Plotbreak Discord',
+  },
   cta: {
     iconAlt: 'Plotbreak app icon',
     title: 'Your move.',
@@ -148,6 +155,7 @@ const en = {
     download: 'Download',
     support: 'Support',
     contact: 'Contact & Support',
+    discord: 'Discord',
     terms: 'Terms of Service',
     privacy: 'Privacy Policy',
     copy: '© 2026 Plotbreak. All rights reserved.',

@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
-import { APP_NAME, APP_STORE_URL, SUPPORT_EMAIL } from '../config';
-import { AppleLogo } from './Icons';
+import { APP_NAME, APP_STORE_URL, DISCORD_URL, SUPPORT_EMAIL } from '../config';
+import { AppleLogo, DiscordLogo } from './Icons';
 import { useLocale, rememberLocale, stripLocale } from '../i18n';
 
 /** The brand lockup. `full` adds the tagline row (localised); the default is the compact bar + PLOTBREAK. */
@@ -21,6 +21,17 @@ export function StoreButton({ className = 'btn btn-white', children }: { classNa
     <a className={className} href={APP_STORE_URL[locale]} target="_blank" rel="noopener">
       <AppleLogo />
       {children ?? t.nav.store}
+    </a>
+  );
+}
+
+/** Every link to the Discord server goes through here, like `StoreButton` for the App Store. */
+export function DiscordButton({ className = 'btn btn-discord', children }: { className?: string; children?: React.ReactNode }) {
+  const { t } = useLocale();
+  return (
+    <a className={className} href={DISCORD_URL} target="_blank" rel="noopener" aria-label={children ? undefined : t.community.navLabel} title={t.community.navLabel}>
+      <DiscordLogo />
+      {children}
     </a>
   );
 }
@@ -53,6 +64,7 @@ export function Nav() {
         </nav>
         <div className="nav-actions">
           <LanguageSwitch />
+          <DiscordButton className="btn btn-dark btn-icon" />
           <StoreButton />
         </div>
       </div>
@@ -83,6 +95,7 @@ export function Footer() {
           <h4>{t.footer.support}</h4>
           <ul>
             <li><a href={`mailto:${SUPPORT_EMAIL}`}>{t.footer.contact}</a></li>
+            <li><a href={DISCORD_URL} target="_blank" rel="noopener">{t.footer.discord}</a></li>
             <li><Link to={path('/terms')}>{t.footer.terms}</Link></li>
             <li><Link to={path('/privacy')}>{t.footer.privacy}</Link></li>
             <li><LanguageSwitch className="lang-inline" /></li>

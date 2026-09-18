@@ -143,6 +143,13 @@ const fr: typeof en = {
     linkPrefix: 'Tout est détaillé dans la',
     linkLabel: 'Politique de confidentialité',
   },
+  community: {
+    eyebrow: 'Communauté',
+    title: 'Rejoignez-nous sur Discord.',
+    lede: 'Partagez vos parties les plus folles, découvrez ce que les autres ont trouvé, et dites-nous quel monde créer ensuite.',
+    join: 'Rejoindre le Discord',
+    navLabel: 'Rejoindre le Discord de Plotbreak',
+  },
   cta: {
     iconAlt: 'Icône de l’application Plotbreak',
     title: 'À vous de jouer.',
@@ -154,6 +161,7 @@ const fr: typeof en = {
     download: 'Télécharger',
     support: 'Support',
     contact: 'Contact et support',
+    discord: 'Discord',
     terms: 'Conditions d’utilisation',
     privacy: 'Politique de confidentialité',
     copy: '© 2026 Plotbreak. Tous droits réservés.',
